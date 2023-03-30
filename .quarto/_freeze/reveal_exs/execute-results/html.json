@@ -1,0 +1,16 @@
+{
+  "hash": "a90e5217342ffecfdb731db6b0c370bf",
+  "result": {
+    "markdown": "---\ntitle: \"reveal_exs\"\nformat: \n  html:\n    theme: [default, rutgers.scss]\n\n---\n\n\n# Level one header\n\n## Quarto\n\n### Level 3\n\nQuarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] 2\n```\n:::\n:::\n",
+    "supporting": [
+      "reveal_exs_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
