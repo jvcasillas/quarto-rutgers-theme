@@ -12,41 +12,11 @@ $presentation-heading-color: #cc0033 !default;
 $presentation-heading-font-weight: 400 !default;
 $presentation-title-slide-text-align: left !default;
 
-.title {
-  padding-top: 200px !important;
-  font-size: 1.35em !important;
-}
-
-.subtitle {
-  color: #666666 !important;
-  font-size: 1.25em !important;
-  line-height: 0.75em !important;
-}
-
-.author {
-  text-align: left !important;
-  font-size: 0.90em !important;
-  line-height: 0.75em !important;
-} 
-
-.institute {
-  font-size: 0.90em !important;
-  line-height: 0.85em !important;
-}
-
-.date {
-  font-size: 0.90em !important;
-  line-height: 0.85em !important;
-}
 
 $presentation-h1-font-size: 2.0em !default;
 $presentation-h2-font-size: 1.75em !default;
 $presentation-h3-font-size: 1.25em !default;
 $presentation-h3-color: #818181 !default;
-
-h3 {
-  color: #616161 !important;
-}
 
 $body-bg: #fff;
 $body-color: #000;
@@ -60,11 +30,4 @@ $selection-color: #fff !default;
 .reveal .slide blockquote {
   border-left: 3px solid $text-muted;
   padding-left: 0.5em;
-}
-
-/* remove color from tables */
-table, th, td {
-  border-top: 2px solid;
-  border-color: white;
-  line-height: 0.75em !important;
 }

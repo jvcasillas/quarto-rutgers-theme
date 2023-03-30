@@ -4,11 +4,7 @@ subtitle: "Subtitle goes here"
 author: "Joseph V. Casillas"
 institute: "Rutgers University"
 date: "Last update: `r Sys.Date()`"
-format: 
-  revealjs:
-    theme: [default, rutgers.scss]
-    template-partials:
-      - title-slide.html
+format: rutgers-revealjs
 engine: knitr
 execute: 
   out.width: "100%"
