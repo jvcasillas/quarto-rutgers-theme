@@ -1,0 +1,59 @@
+/*-- scss:defaults --*/
+
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+
+body { font-family: 'Droid Serif', 'Palatino Linotype', 'Book Antiqua', Palatino, 'Microsoft YaHei', 'Songti SC', serif; }
+h1, h2, h3 {
+  font-family: 'Yanone Kaffeesatz';
+  font-weight: normal;
+}
+
+.title {
+  text-align: left !important;
+  color: #cc0033;
+  padding-top: 200px !important;
+  font-size: 1.35em !important;
+}
+
+.subtitle {
+  text-align: left !important;
+  color: #666666 !important;
+  font-size: 1.25em !important;
+  line-height: 0.75em !important;
+}
+
+.author {
+  text-align: left !important;
+  font-size: 0.90em !important;
+  line-height: 0.75em !important;
+} 
+
+.institute {
+  text-align: left !important;
+  font-size: 0.90em !important;
+  line-height: 0.85em !important;
+}
+
+.date {
+  text-align: left !important;
+  font-size: 0.90em !important;
+  line-height: 0.85em !important;
+}
+
+
+h1 {
+  color: #cc0033 !important;
+  font-size: 1.25em !important;
+}
+
+h3 {
+  color: #616161 !important;
+  font-size: 1.25em !important;
+}
+
+/* remove color from tables */
+table, th, td {
+  border-top: 2px solid;
+  border-color: white;
+  line-height: 0.75em !important;
+}
