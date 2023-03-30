@@ -1,6 +1,6 @@
 ---
-title: "Quarto revealjs custom theme"
-subtitle: "Subtitle goes here"
+title: "Quarto Rutgers theme"
+subtitle: "Port of the ru_xaringan theme using quarto markdown"
 author: "Joseph V. Casillas"
 institute: "Rutgers University"
 date: "Last update: `r Sys.Date()`"
