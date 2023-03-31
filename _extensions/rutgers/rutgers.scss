@@ -31,3 +31,49 @@ $selection-color: #fff !default;
   border-left: 3px solid $text-muted;
   padding-left: 0.5em;
 }
+
+
+
+
+
+#title-slide {
+  text-align: left;
+}
+
+.title {
+  padding-top: 200px !important;
+  font-size: 1.35em !important;
+}
+
+.subtitle {
+  color: #666666 !important;
+  font-size: 1.25em !important;
+  line-height: 0.75em !important;
+}
+
+.author {
+  text-align: left !important;
+  font-size: 0.90em !important;
+  line-height: 0.75em !important;
+} 
+
+.institute {
+  font-size: 0.90em !important;
+  line-height: 0.85em !important;
+}
+
+.date {
+  font-size: 0.90em !important;
+  line-height: 0.85em !important;
+}
+
+h3 {
+  color: #616161 !important;
+}
+
+/* remove color from tables */
+table, th, td {
+  border-top: 2px solid;
+  border-color: white;
+  line-height: 0.75em !important;
+}
