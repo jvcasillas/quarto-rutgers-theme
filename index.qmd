@@ -679,10 +679,10 @@ Here is an example:
 ```{r}
 #| label: pi-func
 #| eval: false
-p_i <- function(link, icn) {
-  out <- glue::glue("<a href='{link}'>{{{{< {icn} >}}}}</a>")
-  return(out)
-}
+#p_i <- function(link, icn) {
+  #out <- glue::glue("<a href='{link}'>{{{{< {icn} >}}}}</a>")
+ # return(out)
+#}
 
 tibble::tibble(
   ` ` = c(
