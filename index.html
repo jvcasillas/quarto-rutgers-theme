@@ -389,6 +389,9 @@
       margin-right: 0; 
     }
   </style>
+  <script src="index_files/libs/quarto-diagram/mermaid.min.js"></script>
+  <script src="index_files/libs/quarto-diagram/mermaid-init.js"></script>
+  <link href="index_files/libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -603,8 +606,13 @@ This is my footer
 <li>set <code>background-interactive</code> to true if you need to actually use the page</li>
 </ul>
 </section>
-<section id="section" class="slide level2" data-background-iframe="https://www.jvcasillas.com">
+<section id="iframe-ex-id" class="slide level2" data-background-iframe="https://www.jvcasillas.com" data-menu-title="iframe example">
 <h2></h2>
+</section>
+<section id="more-iframes" class="slide level2">
+<h2>More iframes</h2>
+<p>They don’t have to take up the whole screen (insert using <code>{=html}</code> chunk):</p>
+<iframe width="100%" height="400" src="https://quarto.org/" title="Quarto Documentation"></iframe>
 </section>
 <section id="preview-links" class="slide level2">
 <h2>preview links</h2>
@@ -627,6 +635,27 @@ Big Text
 <img data-src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/164.png" class="r-stretch">
 </section></section>
 <section>
+<section id="spans" class="title-slide slide level1 center">
+<h1>Spans</h1>
+
+</section>
+<section id="all-about-spans" class="slide level2">
+<h2>All about spans</h2>
+<ul>
+<li><p>In <code>xaringan</code>, one can use <code>.[]</code> to apply some type of formatting to text, i.e., <code>.red[red text]</code></p></li>
+<li><p>In reveal, this works <span style="color: #cc0033;">in a similar way</span></p></li>
+</ul>
+<div class="fragment">
+<p><code>[in a similar way]{style="color: #cc0033;"}</code></p>
+</div>
+<div class="fragment">
+<ul>
+<li>The Rutgers theme as a class for emphasizing in <span class="emph">red</span><br>
+<code>[red]{.emph}</code></li>
+</ul>
+</div>
+</section></section>
+<section>
 <section id="animations" class="title-slide slide level1 transition center">
 <h1>Animations</h1>
 
@@ -645,25 +674,25 @@ Animating content
 Animating content
 :::</code></pre>
 </section>
-<section id="section-1" class="slide level2" data-auto-animate="true">
+<section id="animation-ex1a-id" class="slide level2" data-auto-animate="true" data-menu-title="animation example">
 <h2 data-id="quarto-animate-title"></h2>
 <div style="margin-top: 100px;">
 <p>Look at me</p>
 </div>
 </section>
-<section id="section-2" class="slide level2" data-auto-animate="true">
+<section id="animation-ex1b-id" class="slide level2" data-auto-animate="true" data-menu-title="animation example">
 <h2 data-id="quarto-animate-title"></h2>
 <div style="margin-top: 200px; font-size: 4em; color: #cc0033;">
 <p>Look at you</p>
 </div>
 </section>
-<section id="section-3" class="slide level2" data-auto-animate="true">
+<section id="animation-ex1c-id" class="slide level2" data-auto-animate="true" data-menu-title="animation example">
 <h2 data-id="quarto-animate-title"></h2>
 <div style="margin-top: 600px; margin-left: 400px; font-size: 2em; color: black;">
 <p>Look at this</p>
 </div>
 </section>
-<section id="section-4" class="slide level2" data-auto-animate="true">
+<section id="animation-ex1d-id" class="slide level2" data-auto-animate="true" data-menu-title="animation example">
 <h2 data-id="quarto-animate-title"></h2>
 <div style="margin-top: 100px; margin-left: 100px; font-size: 4em; color: #cc0033;">
 <p>Look at this</p>
@@ -693,14 +722,14 @@ output$phonePlot &lt;- renderPlot({
 })
 ```</code></pre>
 </section>
-<section id="section-5" class="slide level2" data-auto-animate="true">
+<section id="animation-ex2a-id" class="slide level2" data-auto-animate="true" data-menu-title="code animation example">
 <h2 data-id="quarto-animate-title"></h2>
 <div class="sourceCode" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb14-1" class="hljs-ln-code"><a href="#cb14-1"></a><span class="co"># Fill in the spot we created for a plot</span></span>
 <span id="cb14-2" class="hljs-ln-code"><a href="#cb14-2"></a>output<span class="sc">$</span>phonePlot <span class="ot">&lt;-</span> <span class="fu">renderPlot</span>({</span>
 <span id="cb14-3" class="hljs-ln-code"><a href="#cb14-3"></a>  <span class="co"># Render a barplot</span></span>
 <span id="cb14-4" class="hljs-ln-code"><a href="#cb14-4"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="section-6" class="slide level2" data-auto-animate="true">
+<section id="animation-ex2b-id" class="slide level2" data-auto-animate="true" data-menu-title="code animation example">
 <h2 data-id="quarto-animate-title"></h2>
 <div class="sourceCode" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb15-1" class="hljs-ln-code"><a href="#cb15-1"></a><span class="co"># Fill in the spot we created for a plot</span></span>
 <span id="cb15-2" class="hljs-ln-code"><a href="#cb15-2"></a>output<span class="sc">$</span>phonePlot <span class="ot">&lt;-</span> <span class="fu">renderPlot</span>({</span>
@@ -711,22 +740,22 @@ output$phonePlot &lt;- renderPlot({
 <span id="cb15-7" class="hljs-ln-code"><a href="#cb15-7"></a>          <span class="at">xlab=</span><span class="st">"Year"</span>)</span>
 <span id="cb15-8" class="hljs-ln-code"><a href="#cb15-8"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="section-7" class="slide level2" data-auto-animate="true">
+<section id="animation-ex3a-id" class="slide level2" data-auto-animate="true" data-menu-title="list animation example">
 <h2 data-id="quarto-animate-title"></h2>
 <p>cool</p>
 </section>
-<section id="section-8" class="slide level2" data-auto-animate="true">
+<section id="animation-ex3b-id" class="slide level2" data-auto-animate="true" data-menu-title="list animation example">
 <h2 data-id="quarto-animate-title"></h2>
 <p>is</p>
 <p>cool</p>
 </section>
-<section id="section-9" class="slide level2" data-auto-animate="true">
+<section id="animation-ex3c-id" class="slide level2" data-auto-animate="true" data-menu-title="list animation example">
 <h2 data-id="quarto-animate-title"></h2>
 <p>animation</p>
 <p>is</p>
 <p>cool</p>
 </section>
-<section id="section-10" class="slide level2" data-auto-animate="true" data-auto-animate-easing="ease-in-out">
+<section id="animation-ex4a-id" class="slide level2" data-auto-animate="true" data-auto-animate-easing="ease-in-out" data-menu-title="hstack animation example">
 <h2 data-id="quarto-animate-title"></h2>
 <div class="r-hstack">
 <div data-id="box1" data-auto-animate-delay="0" style="background: #2780e3; width: 200px; height: 150px; margin: 10px;">
@@ -740,7 +769,7 @@ output$phonePlot &lt;- renderPlot({
 </div>
 </div>
 </section>
-<section id="section-11" class="slide level2" data-auto-animate="true" data-auto-animate-easing="ease-in-out">
+<section id="animation-ex4b-id" class="slide level2" data-auto-animate="true" data-auto-animate-easing="ease-in-out" data-menu-title="hstack animation example">
 <h2 data-id="quarto-animate-title"></h2>
 <div class="r-stack">
 <div data-id="box1" style="background: #2780e3; width: 350px; height: 350px; border-radius: 200px;">
@@ -759,8 +788,8 @@ output$phonePlot &lt;- renderPlot({
 <h1>Fragments</h1>
 
 </section>
-<section class="slide level2">
-
+<section id="fragments-ex-id" class="slide level2" data-menu-title="change text with fragments">
+<h2></h2>
 <div class="fragment">
 <p>Fade in</p>
 </div>
@@ -775,6 +804,175 @@ output$phonePlot &lt;- renderPlot({
 </div>
 <div class="fragment fade-up">
 <p>Slide up while fading in</p>
+</div>
+</section></section>
+<section>
+<section id="diagrams" class="title-slide slide level1 center">
+<h1>Diagrams</h1>
+
+</section>
+<section id="mermaid-ex1-id" class="slide level2">
+<h2></h2>
+<div class="cell" data-reveal="true" data-fig-width="6">
+<div class="cell-output-display">
+<div id="fig-mermaid1" class="quarto-figure quarto-figure-center">
+<figure>
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-mermaid1">flowchart LR
+  A[qmd] --&gt; B(Knitr)
+  A[qmd] --&gt; C(Jupyter)
+  B(Knitr) --&gt; D[md]
+  C(Jupyter) --&gt; D[md]
+  D[md] --&gt; E(pandoc)
+  E(pandoc) --&gt; F(HTML)
+  E(pandoc) --&gt; G(PDF)
+  E(pandoc) --&gt; H(Word)
+  E(pandoc) --&gt; I{and more}
+</pre>
+</div>
+<p></p><figcaption>Figure&nbsp;1: How Quarto orchestrates rendering of documents: start with a qmd file, use the Knitr or Jupyter engine to perform the computations and convert it to an md file, then use Pandoc to convert to various file formats including HTML, PDF, and Word.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="mermaid-ex2-id" class="slide level2">
+<h2></h2>
+<div class="cell" data-reveal="true">
+<div class="cell-output-display">
+<div id="fig-mermaid2" class="quarto-figure quarto-figure-center">
+<figure>
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-mermaid2">flowchart LR
+  A[write] --&gt; B(submit)
+  B(submit) --&gt; C(Peer review)
+  C(Peer review) --&gt; D(Revise)
+  C(Peer review) --&gt; E(Accept)
+  C(Peer review) --&gt; F{Reject}
+  D(Revise) --&gt; B(submit)
+</pre>
+</div>
+<p></p><figcaption>Figure&nbsp;2: Something about RRs.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="section" class="slide level2">
+<h2></h2>
+<div class="cell" data-reveal="true">
+<div class="cell-output-display">
+<div id="fig-mermaid3" class="quarto-figure quarto-figure-center">
+<figure>
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-mermaid3">gantt
+  title A Gantt Diagram
+  dateFormat YYYY-MM-DD
+  section Collect data
+  In person data   :a1, 2023-01-01, 30d
+  Online data      :after a1, 20d
+  section Write paper
+  First draft      :2023-01-12, 12d
+  Revisions        :24d
+</pre>
+</div>
+<p></p><figcaption>Figure&nbsp;3: You can use this to show the timeline of a project.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="dot-diagrams" class="slide level2">
+<h2>Dot diagrams</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-dot" class="quarto-figure quarto-figure-center">
+<figure>
+<div>
+<svg width="960" height="480" viewbox="0.00 0.00 245.08 327.34" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none; display: block; margin: auto auto auto auto">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 323.34)">
+<title>
+G
+</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-323.34 241.08,-323.34 241.08,4 -4,4"></polygon> <!-- qmd --> <g id="node1" class="node">
+<title>
+qmd
+</title>
+<ellipse fill="none" stroke="black" cx="69.62" cy="-301.34" rx="28.41" ry="18"></ellipse> <text text-anchor="middle" x="69.62" y="-297.14" font-family="Times,serif" font-size="14.00">qmd</text> </g> <!-- Knitr --> <g id="node2" class="node">
+<title>
+Knitr
+</title>
+<ellipse fill="none" stroke="black" cx="132.13" cy="-252.75" rx="31.34" ry="18"></ellipse> <text text-anchor="middle" x="132.13" y="-248.55" font-family="Times,serif" font-size="14.00">Knitr</text> </g> <!-- qmd&#45;&#45;Knitr --> <g id="edge1" class="edge">
+<title>
+qmd–Knitr
+</title>
+<path fill="none" stroke="black" d="M87.7,-287.28C95.78,-281 105.29,-273.61 113.44,-267.28"></path> </g> <!-- Jupyter --> <g id="node3" class="node">
+<title>
+Jupyter
+</title>
+<ellipse fill="none" stroke="black" cx="39.47" cy="-228.46" rx="39.43" ry="18"></ellipse> <text text-anchor="middle" x="39.47" y="-224.26" font-family="Times,serif" font-size="14.00">Jupyter</text> </g> <!-- qmd&#45;&#45;Jupyter --> <g id="edge2" class="edge">
+<title>
+qmd–Jupyter
+</title>
+<path fill="none" stroke="black" d="M62.32,-283.69C57.62,-272.32 51.52,-257.58 46.8,-246.19"></path> </g> <!-- md --> <g id="node4" class="node">
+<title>
+md
+</title>
+<ellipse fill="none" stroke="black" cx="102.7" cy="-177.2" rx="27" ry="18"></ellipse> <text text-anchor="middle" x="102.7" y="-173" font-family="Times,serif" font-size="14.00">md</text> </g> <!-- Knitr&#45;&#45;md --> <g id="edge3" class="edge">
+<title>
+Knitr–md
+</title>
+<path fill="none" stroke="black" d="M125.16,-234.84C120.43,-222.72 114.21,-206.76 109.52,-194.72"></path> </g> <!-- Jupyter&#45;&#45;md --> <g id="edge4" class="edge">
+<title>
+Jupyter–md
+</title>
+<path fill="none" stroke="black" d="M59.12,-212.52C67.54,-205.71 77.27,-197.82 85.4,-191.22"></path> </g> <!-- pandoc --> <g id="node5" class="node">
+<title>
+pandoc
+</title>
+<ellipse fill="none" stroke="black" cx="121.99" cy="-95.61" rx="38.85" ry="18"></ellipse> <text text-anchor="middle" x="121.99" y="-91.41" font-family="Times,serif" font-size="14.00">pandoc</text> </g> <!-- md&#45;&#45;pandoc --> <g id="edge5" class="edge">
+<title>
+md–pandoc
+</title>
+<path fill="none" stroke="black" d="M106.98,-159.1C110.18,-145.58 114.53,-127.18 117.72,-113.67"></path> </g> <!-- HTML --> <g id="node6" class="node">
+<title>
+HTML
+</title>
+<ellipse fill="none" stroke="black" cx="41.87" cy="-72.53" rx="38.29" ry="18"></ellipse> <text text-anchor="middle" x="41.87" y="-68.33" font-family="Times,serif" font-size="14.00">HTML</text> </g> <!-- pandoc&#45;&#45;HTML --> <g id="edge6" class="edge">
+<title>
+pandoc–HTML
+</title>
+<path fill="none" stroke="black" d="M88.94,-86.09C84.2,-84.72 79.32,-83.32 74.59,-81.96"></path> </g> <!-- PDF --> <g id="node7" class="node">
+<title>
+PDF
+</title>
+<ellipse fill="none" stroke="black" cx="96.57" cy="-18" rx="28.51" ry="18"></ellipse> <text text-anchor="middle" x="96.57" y="-13.8" font-family="Times,serif" font-size="14.00">PDF</text> </g> <!-- pandoc&#45;&#45;PDF --> <g id="edge7" class="edge">
+<title>
+pandoc–PDF
+</title>
+<path fill="none" stroke="black" d="M116.1,-77.61C111.96,-64.98 106.46,-48.18 102.35,-35.64"></path> </g> <!-- Word --> <g id="node8" class="node">
+<title>
+Word
+</title>
+<ellipse fill="none" stroke="black" cx="204.05" cy="-110.52" rx="33.05" ry="18"></ellipse> <text text-anchor="middle" x="204.05" y="-106.32" font-family="Times,serif" font-size="14.00">Word</text> </g> <!-- pandoc&#45;&#45;Word --> <g id="edge8" class="edge">
+<title>
+pandoc–Word
+</title>
+<path fill="none" stroke="black" d="M158.23,-102.2C163.03,-103.07 167.93,-103.96 172.65,-104.82"></path> </g> <!-- more --> <g id="node9" class="node">
+<title>
+more
+</title>
+<ellipse fill="none" stroke="black" cx="178.27" cy="-36.72" rx="30.76" ry="18"></ellipse> <text text-anchor="middle" x="178.27" y="-32.52" font-family="Times,serif" font-size="14.00">more</text> </g> <!-- pandoc&#45;&#45;more --> <g id="edge9" class="edge">
+<title>
+pandoc–more
+</title>
+<path fill="none" stroke="black" d="M137.97,-78.89C145.9,-70.6 155.42,-60.63 163.22,-52.47"></path> </g> </g>
+</svg>
+</div>
+<p></p><figcaption>Figure&nbsp;4: How Quarto orchestrates rendering of documents.</figcaption><p></p>
+</figure>
+</div>
+</div>
 </div>
 </section></section>
 <section>
@@ -808,7 +1006,7 @@ output$phonePlot &lt;- renderPlot({
 <div id="fig-code-ex" class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="index_files/figure-revealjs/fig-code-ex-1.png" width="960"></p>
-<p></p><figcaption>Figure&nbsp;1: Example caption.</figcaption><p></p>
+<p></p><figcaption>Figure&nbsp;5: Example caption.</figcaption><p></p>
 </figure>
 </div>
 </div>
@@ -853,7 +1051,7 @@ Content for `Tab B`
 <div id="fig-tabset" class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="index_files/figure-revealjs/fig-tabset-1.png" width="960"></p>
-<p></p><figcaption>Figure&nbsp;2: Tabset plot</figcaption><p></p>
+<p></p><figcaption>Figure&nbsp;6: Tabset plot</figcaption><p></p>
 </figure>
 </div>
 </div>

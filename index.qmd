@@ -18,15 +18,18 @@ Check me out
 
 ## Standard markdown stuff
 
--   Similar to `xaringan`, **revealjs** uses \# for headers
--   One difference is that they automatically generate a new slide
-    -   Two (##) for a level two header at the top of a slide
-    -   One (#) is centered vertically (good for a section divider)
--   All other basic markdown syntax works the same:
+- Similar to `xaringan`, **revealjs** uses \# for headers
+- One difference is that they automatically generate a new slide
+  - Two (##) for a level two header at the top of a slide
+  - One (#) is centered vertically (good for a section divider)
+- All other basic markdown syntax works the same:
 
 ### h3 level
 
 #### h4 level
+
+
+
 
 ## Incremental slides
 
@@ -38,7 +41,7 @@ To make an ordered or unordered list incremental you have to use css
 
 ::: columns
 ::: {.column width="50%"}
-```         
+```
 ::: {.incremental}
 - First this one
 - Then this one
@@ -48,8 +51,8 @@ To make an ordered or unordered list incremental you have to use css
 
 ::: {.column width="50%"}
 ::: incremental
--   First this one
--   Then this one
+- First this one
+- Then this one
 :::
 :::
 :::
@@ -58,7 +61,7 @@ To make an ordered or unordered list incremental you have to use css
 
 ::: columns
 ::: {.column width="50%"}
-```         
+```
 ::: {.incremental}
 1. First this one
 2. Then this one
@@ -68,8 +71,8 @@ To make an ordered or unordered list incremental you have to use css
 
 ::: {.column width="50%"}
 ::: incremental
-1.  First this one
-2.  Then this one
+1. First this one
+2. Then this one
 :::
 :::
 :::
@@ -118,17 +121,19 @@ You can use css to make text smaller with `{.smaller}`
 
 . . .
 
--   this
--   is
--   ideal
--   for
--   really
--   long
--   slides
--   but
--   it's
--   usually
--   better to avoid that
+- this
+- is
+- ideal
+- for
+- really
+- long
+- slides
+- but
+- it's
+- usually
+- better to avoid that
+
+
 
 ## Long slides? (again) {.scrollable}
 
@@ -136,26 +141,28 @@ Another option is to make the individual slide scrollable using `{.scrollable}`
 
 . . .
 
--   this
--   is
--   ideal
--   for
--   really
--   long
--   slides
--   but
--   it's
--   usually
--   better
--   to
--   avoid
--   that
+- this
+- is
+- ideal
+- for
+- really
+- long
+- slides
+- but
+- it's
+- usually
+- better
+- to
+- avoid
+- that
+
+
 
 ## Don't forget your speaker notes
 
 You can get your speaker notes all set up using
 
-```         
+```
 ::: {.notes}
 Speaker notes go here.
 :::
@@ -167,11 +174,13 @@ Click "s" to see some notes
 These are some notes.
 :::
 
+
+
 ## Asides
 
 You can include asides, but they are kind of weird.
 
-```         
+```
 ::: aside
 This is an aside
 :::
@@ -180,6 +189,8 @@ This is an aside
 ::: aside
 This is an aside
 :::
+
+
 
 ## Footnotes
 
@@ -191,7 +202,7 @@ I think footnotes are probably more useful [^1]
 
 You can make them endnotes (ew) like this:
 
-```         
+```
 ---
 format:
   revealjs:
@@ -199,11 +210,13 @@ format:
 ---
 ```
 
+
+
 ## Custom footers
 
 You can add a custom footer to any slide using
 
-```         
+```
 ::: footer
 This is my footer
 :::
@@ -213,11 +226,15 @@ This is my footer
 This is my footer
 :::
 
+
+
 ## Export to pdf
 
 You can use `pagedown::chrome_print("path-to-file.html")` to export the slides to pdf
 
 Another option is to type 'e'
+
+
 
 ## iframes
 
@@ -229,11 +246,20 @@ You can easily embed iframes (see next slide)
 ## iframes {background-iframe="https://www.jvcasillas.com"}
 ```
 
--   the website is embedded in the slide
--   it defaults to full screen
--   set `background-interactive` to true if you need to actually use the page
+- the website is embedded in the slide
+- it defaults to full screen
+- set `background-interactive` to true if you need to actually use the page
 
-##  {background-iframe="https://www.jvcasillas.com"}
+## {background-iframe="https://www.jvcasillas.com" #iframe-ex-id data-menu-title="iframe example"}
+
+## More iframes
+
+They don't have to take up the whole screen (insert using `{=html}` chunk): 
+
+```{=html}
+<iframe width="100%" height="400" src="https://quarto.org/" title="Quarto Documentation"></iframe>
+```
+
 
 ## preview links
 
@@ -245,7 +271,7 @@ You can see the content of a link without opening a separate page by setting `pr
 
 ## Sizing things up
 
-```         
+```
 ::: {.r-fit-text}
 Big Text
 :::
@@ -255,19 +281,46 @@ Big Text
 Big Text
 :::
 
+
+
 ## Stretching imgs
 
-```         
+```
 ![](image.png){.r-stretch}
 ```
 
 ![](https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/164.png){.r-stretch}
 
+
+
+# Spans
+
+## All about spans
+
+- In `xaringan`, one can use `.[]` to apply some type of formatting to text, i.e., `.red[red text]`
+
+- In reveal, this works [in a similar way]{style="color: #cc0033;"}
+
+. . .
+
+`[in a similar way]{style="color: #cc0033;"}`
+
+. . .
+
+- The Rutgers theme as a class for emphasizing in [red]{.emph}  
+`[red]{.emph}`
+
+
+
+
+
+
+
 # Animations {.transition}
 
 ## Animations explained
 
-```         
+```
 ## {auto-animate=true}
 
 ::: {style="margin-top: 100px;"}
@@ -281,25 +334,25 @@ Animating content
 :::
 ```
 
-##  {auto-animate="true"}
+## {auto-animate="true" #animation-ex1a-id data-menu-title="animation example"}
 
 ::: {style="margin-top: 100px;"}
 Look at me
 :::
 
-##  {auto-animate="true"}
+## {auto-animate="true" #animation-ex1b-id data-menu-title="animation example"}
 
 ::: {style="margin-top: 200px; font-size: 4em; color: #cc0033;"}
 Look at you
 :::
 
-##  {auto-animate="true"}
+## {auto-animate="true" #animation-ex1c-id data-menu-title="animation example"}
 
 ::: {style="margin-top: 600px; margin-left: 400px; font-size: 2em; color: black;"}
 Look at this
 :::
 
-##  {auto-animate="true"}
+## {auto-animate="true" #animation-ex1d-id data-menu-title="animation example"}
 
 ::: {style="margin-top: 100px; margin-left: 100px; font-size: 4em; color: #cc0033;"}
 Look at this
@@ -307,7 +360,7 @@ Look at this
 
 ## You can animate code chunks too
 
-````         
+````
 ## {auto-animate="true"}
 
 ```r
@@ -331,7 +384,7 @@ output$phonePlot <- renderPlot({
 ```
 ````
 
-##  {auto-animate="true"}
+## {auto-animate="true" #animation-ex2a-id data-menu-title="code animation example"}
 
 ``` r
 # Fill in the spot we created for a plot
@@ -340,7 +393,7 @@ output$phonePlot <- renderPlot({
 })
 ```
 
-##  {auto-animate="true"}
+## {auto-animate="true" #animation-ex2b-id data-menu-title="code animation example"}
 
 ``` r
 # Fill in the spot we created for a plot
@@ -353,17 +406,17 @@ output$phonePlot <- renderPlot({
 })
 ```
 
-##  {auto-animate="true"}
+## {auto-animate="true" #animation-ex3a-id data-menu-title="list animation example"}
 
 cool
 
-##  {auto-animate="true"}
+## {auto-animate="true" #animation-ex3b-id data-menu-title="list animation example"}
 
 is
 
 cool
 
-##  {auto-animate="true"}
+## {auto-animate="true" #animation-ex3c-id data-menu-title="list animation example"}
 
 animation
 
@@ -371,7 +424,9 @@ is
 
 cool
 
-##  {auto-animate="true" auto-animate-easing="ease-in-out"}
+
+
+## {auto-animate="true" auto-animate-easing="ease-in-out" #animation-ex4a-id data-menu-title="hstack animation example"}
 
 ::: r-hstack
 ::: {data-id="box1" auto-animate-delay="0" style="background: #2780e3; width: 200px; height: 150px; margin: 10px;"}
@@ -384,7 +439,7 @@ cool
 :::
 :::
 
-##  {auto-animate="true" auto-animate-easing="ease-in-out"}
+## {auto-animate="true" auto-animate-easing="ease-in-out"  #animation-ex4b-id data-menu-title="hstack animation example"}
 
 ::: r-stack
 ::: {data-id="box1" style="background: #2780e3; width: 350px; height: 350px; border-radius: 200px;"}
@@ -397,9 +452,13 @@ cool
 :::
 :::
 
+
+
+
+
 # Fragments {.transition}
 
-------------------------------------------------------------------------
+## {#fragments-ex-id data-menu-title="change text with fragments"}
 
 ::: fragment
 Fade in
@@ -421,13 +480,97 @@ Fade in, then out
 Slide up while fading in
 :::
 
+
+
+
+# Diagrams
+
+## {#mermaid-ex1-id}
+
+```{mermaid}
+%%| label: fig-mermaid1
+%%| fig-width: 6
+%%| fig-cap: |
+%%|   How Quarto orchestrates rendering of documents: start with 
+%%|   a qmd file, use the Knitr or Jupyter engine to perform the 
+%%|   computations and convert it to an md file, then use Pandoc 
+%%|   to convert to various file formats including HTML, PDF, 
+%%|   and Word.
+flowchart LR
+  A[qmd] --> B(Knitr)
+  A[qmd] --> C(Jupyter)
+  B(Knitr) --> D[md]
+  C(Jupyter) --> D[md]
+  D[md] --> E(pandoc)
+  E(pandoc) --> F(HTML)
+  E(pandoc) --> G(PDF)
+  E(pandoc) --> H(Word)
+  E(pandoc) --> I{and more}
+```
+
+## {#mermaid-ex2-id}
+
+```{mermaid}
+%%| label: fig-mermaid2
+%%| fig-cap: |
+%%|   Something about RRs.
+flowchart LR
+  A[write] --> B(submit)
+  B(submit) --> C(Peer review)
+  C(Peer review) --> D(Revise)
+  C(Peer review) --> E(Accept)
+  C(Peer review) --> F{Reject}
+  D(Revise) --> B(submit)
+```
+
+##
+
+```{mermaid}
+%%| label: fig-mermaid3
+%%| fig-cap: |
+%%|   You can use this to show the timeline of a project.
+gantt
+  title A Gantt Diagram
+  dateFormat YYYY-MM-DD
+  section Collect data
+  In person data   :a1, 2023-01-01, 30d
+  Online data      :after a1, 20d
+  section Write paper
+  First draft      :2023-01-12, 12d
+  Revisions        :24d
+```
+
+
+
+## Dot diagrams
+
+```{dot}
+//| label: fig-dot
+//| fig-cap: |
+//|   How Quarto orchestrates rendering of documents.
+graph G {
+  layout=neato
+  qmd -- Knitr;
+  qmd -- Jupyter;
+  Knitr -- md;
+  Jupyter -- md;
+  md -- pandoc;
+  pandoc -- HTML;
+  pandoc -- PDF;
+  pandoc -- Word;
+  pandoc -- more;
+}
+```
+
+
+
 # Code stuff {.transition}
 
 ## Standard slide with R code {.smaller}
 
--   You can highlight code using `code-line-numbers` in the knitr chunk options
--   If you include pipes, e.g., `code-line-numbers: "|5|"` they will be highlighted incrementally (nice!)
--   Using `output-location:` (fragment, slide, column, column-fragment) controls when and where the output of the code is displayed
+- You can highlight code using `code-line-numbers` in the knitr chunk options
+- If you include pipes, e.g., `code-line-numbers: "|5|"` they will be highlighted incrementally (nice!)
+- Using `output-location:` (fragment, slide, column, column-fragment) controls when and where the output of the code is displayed
 
 ```{r}
 #| label: fig-code-ex
@@ -448,11 +591,13 @@ ggplot(cars) +
   )
 ```
 
+
+
 ## Tabsets
 
 You can use tabsets pretty easily
 
-```         
+```
 ::: {.panel-tabset}
 
 ### Tab A
@@ -468,7 +613,7 @@ Content for `Tab B`
 
 (example on next slide)
 
-------------------------------------------------------------------------
+---
 
 ::: panel-tabset
 ### Code
@@ -497,19 +642,27 @@ plot_tabs
 ```
 :::
 
+
+
+
 # Linguistics stuff {.transition}
 
 ## IPA symbols work in unicode
 
--   /ʃæ.'riŋ.ɡæn/
+- /ʃæ.'riŋ.ɡæn/
 
--   /θðszʃʒʂʐçʝʎʟɘɵəɜ/
+- /θðszʃʒʂʐçʝʎʟɘɵəɜ/
 
 | Word        | Phonology | Phonetics              |
 |:------------|-----------|------------------------|
 | casa        | /ˈka.sa/  | \[ˈka.sa\]             |
 | taco (Sp.)  | /ˈta.ko/  | \[ˈta.ko\]             |
 | taco (Eng.) | /ˈta.ko/  | \[ˈt<sup>h</sup>a.ko\] |
+
+
+
+
+
 
 # Finishing up {.transition}
 
