@@ -678,6 +678,7 @@ Here is an example:
 
 ```{r}
 #| label: pi-func
+#| eval: false
 p_i <- function(link, icn) {
   out <- glue::glue("<a href='{link}'>{{{{< {icn} >}}}}</a>")
   return(out)
@@ -699,3 +700,9 @@ tibble::tibble(
   knitr::kable(align = c("r", "l"))
 ```
 
+|                                                                             |                                    |
+|----------------------------------------------------------------------------:|:-----------------------------------|
+|   <a href='mailto:joseph.casillas@rutgers.edu'>{{< fa solid envelope >}}</a>|joseph.casillas@rutgers.edu         |
+| <a href='www.jvcasillas.com/quarto-rutgers-theme/'>{{< fa solid link >}}</a>|jvcasillas.com/quarto-rutgers-theme |
+|         <a href='https://twitter.com/jvcasill'>{{< fa brands twitter >}}</a>|@jvcasill                           |
+|         <a href='https://github.com/jvcasillas'>{{< fa brands github >}}</a>|@jvcasillas                         |
