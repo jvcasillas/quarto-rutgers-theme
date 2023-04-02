@@ -18,16 +18,15 @@ Check me out
 
 ## Standard markdown stuff
 
-- Similar to `xaringan`, **revealjs** uses \# for headers
-- One difference is that they automatically generate a new slide
-  - Two (\#\#) for a level two header at the top of a slide
-  - One (\#) is centered vertically (good for a section divider)
-- All other basic markdown syntax works the same: 
+-   Similar to `xaringan`, **revealjs** uses \# for headers
+-   One difference is that they automatically generate a new slide
+    -   Two (##) for a level two header at the top of a slide
+    -   One (#) is centered vertically (good for a section divider)
+-   All other basic markdown syntax works the same:
 
 ### h3 level
 
 #### h4 level
-
 
 ## Incremental slides
 
@@ -37,10 +36,9 @@ To make an ordered or unordered list incremental you have to use css
 
 </br>
 
-:::: {.columns}
-
+::: columns
 ::: {.column width="50%"}
-```
+```         
 ::: {.incremental}
 - First this one
 - Then this one
@@ -49,20 +47,18 @@ To make an ordered or unordered list incremental you have to use css
 :::
 
 ::: {.column width="50%"}
-::: {.incremental}
-- First this one
-- Then this one
+::: incremental
+-   First this one
+-   Then this one
 :::
 :::
-
-::::
+:::
 
 . . .
 
-:::: {.columns}
-
+::: columns
 ::: {.column width="50%"}
-```
+```         
 ::: {.incremental}
 1. First this one
 2. Then this one
@@ -71,15 +67,12 @@ To make an ordered or unordered list incremental you have to use css
 :::
 
 ::: {.column width="50%"}
-::: {.incremental}
-1. First this one
-2. Then this one
+::: incremental
+1.  First this one
+2.  Then this one
 :::
 :::
-
-::::
-
-
+:::
 
 ## Multiple columns
 
@@ -101,8 +94,7 @@ Right column
 ::::
 ```
 
-:::: {.columns}
-
+::: columns
 ::: {.column width="50%"}
 Left column
 :::
@@ -110,9 +102,7 @@ Left column
 ::: {.column width="50%"}
 Right column
 :::
-
-::::
-
+:::
 
 # Some new stuff {.transition}
 
@@ -128,18 +118,17 @@ You can use css to make text smaller with `{.smaller}`
 
 . . .
 
-- this
-- is
-- ideal
-- for 
-- really
-- long
-- slides
-- but
-- it's
-- usally
-- better to avoid that
-
+-   this
+-   is
+-   ideal
+-   for
+-   really
+-   long
+-   slides
+-   but
+-   it's
+-   usually
+-   better to avoid that
 
 ## Long slides? (again) {.scrollable}
 
@@ -147,27 +136,26 @@ Another option is to make the individual slide scrollable using `{.scrollable}`
 
 . . .
 
-- this
-- is
-- ideal
-- for 
-- really
-- long
-- slides
-- but
-- it's
-- usally
-- better 
-- to 
-- avoid 
-- that
-
+-   this
+-   is
+-   ideal
+-   for
+-   really
+-   long
+-   slides
+-   but
+-   it's
+-   usually
+-   better
+-   to
+-   avoid
+-   that
 
 ## Don't forget your speaker notes
 
 You can get your speaker notes all set up using
 
-```
+```         
 ::: {.notes}
 Speaker notes go here.
 :::
@@ -175,16 +163,15 @@ Speaker notes go here.
 
 Click "s" to see some notes
 
-::: {.notes}
+::: notes
 These are some notes.
 :::
 
-
 ## Asides
 
-You can include asides, but they are kind of weird. 
+You can include asides, but they are kind of weird.
 
-```
+```         
 ::: aside
 This is an aside
 :::
@@ -193,17 +180,18 @@ This is an aside
 ::: aside
 This is an aside
 :::
-
 
 ## Footnotes
 
-I think footnotes are probably more useful ^[But maybe not always]
+I think footnotes are probably more useful [^1]
+
+[^1]: But maybe not always
 
 . . .
 
-You can make them endnotes (ew) like this: 
+You can make them endnotes (ew) like this:
 
-```
+```         
 ---
 format:
   revealjs:
@@ -211,12 +199,11 @@ format:
 ---
 ```
 
-
 ## Custom footers
 
 You can add a custom footer to any slide using
 
-```
+```         
 ::: footer
 This is my footer
 :::
@@ -242,11 +229,11 @@ You can easily embed iframes (see next slide)
 ## iframes {background-iframe="https://www.jvcasillas.com"}
 ```
 
-- the website is embedded in the slide
-- it defaults to full screen
-- set `background-interactive` to true if you need to actually use the page
+-   the website is embedded in the slide
+-   it defaults to full screen
+-   set `background-interactive` to true if you need to actually use the page
 
-## {background-iframe="https://www.jvcasillas.com"}
+##  {background-iframe="https://www.jvcasillas.com"}
 
 ## preview links
 
@@ -258,34 +245,29 @@ You can see the content of a link without opening a separate page by setting `pr
 
 ## Sizing things up
 
-```
+```         
 ::: {.r-fit-text}
 Big Text
 :::
 ```
 
-::: {.r-fit-text}
+::: r-fit-text
 Big Text
 :::
 
 ## Stretching imgs
 
-```
+```         
 ![](image.png){.r-stretch}
 ```
 
 ![](https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/164.png){.r-stretch}
 
-
-
-
-
-
 # Animations {.transition}
 
 ## Animations explained
 
-```
+```         
 ## {auto-animate=true}
 
 ::: {style="margin-top: 100px;"}
@@ -299,25 +281,25 @@ Animating content
 :::
 ```
 
-## {auto-animate=true}
+##  {auto-animate="true"}
 
 ::: {style="margin-top: 100px;"}
 Look at me
 :::
 
-## {auto-animate=true}
+##  {auto-animate="true"}
 
 ::: {style="margin-top: 200px; font-size: 4em; color: #cc0033;"}
 Look at you
 :::
 
-## {auto-animate=true}
+##  {auto-animate="true"}
 
 ::: {style="margin-top: 600px; margin-left: 400px; font-size: 2em; color: black;"}
 Look at this
 :::
 
-## {auto-animate=true}
+##  {auto-animate="true"}
 
 ::: {style="margin-top: 100px; margin-left: 100px; font-size: 4em; color: #cc0033;"}
 Look at this
@@ -325,7 +307,7 @@ Look at this
 
 ## You can animate code chunks too
 
-````
+````         
 ## {auto-animate="true"}
 
 ```r
@@ -349,18 +331,18 @@ output$phonePlot <- renderPlot({
 ```
 ````
 
-## {auto-animate="true"}
+##  {auto-animate="true"}
 
-```r
+``` r
 # Fill in the spot we created for a plot
 output$phonePlot <- renderPlot({
   # Render a barplot
 })
 ```
 
-## {auto-animate=true}
+##  {auto-animate="true"}
 
-```r
+``` r
 # Fill in the spot we created for a plot
 output$phonePlot <- renderPlot({
   # Render a barplot
@@ -371,27 +353,27 @@ output$phonePlot <- renderPlot({
 })
 ```
 
-## {auto-animate=true}
+##  {auto-animate="true"}
 
 cool
 
-## {auto-animate=true}
+##  {auto-animate="true"}
 
-is 
+is
 
 cool
 
-## {auto-animate=true}
+##  {auto-animate="true"}
 
 animation
 
-is 
+is
 
 cool
 
-## {auto-animate=true auto-animate-easing="ease-in-out"}
+##  {auto-animate="true" auto-animate-easing="ease-in-out"}
 
-::: {.r-hstack}
+::: r-hstack
 ::: {data-id="box1" auto-animate-delay="0" style="background: #2780e3; width: 200px; height: 150px; margin: 10px;"}
 :::
 
@@ -402,9 +384,9 @@ cool
 :::
 :::
 
-## {auto-animate=true auto-animate-easing="ease-in-out"}
+##  {auto-animate="true" auto-animate-easing="ease-in-out"}
 
-::: {.r-stack}
+::: r-stack
 ::: {data-id="box1" style="background: #2780e3; width: 350px; height: 350px; border-radius: 200px;"}
 :::
 
@@ -415,15 +397,11 @@ cool
 :::
 :::
 
-
-
-
-
 # Fragments {.transition}
 
----
+------------------------------------------------------------------------
 
-::: {.fragment}
+::: fragment
 Fade in
 :::
 
@@ -443,18 +421,13 @@ Fade in, then out
 Slide up while fading in
 :::
 
-
-
-
-
-
 # Code stuff {.transition}
 
 ## Standard slide with R code {.smaller}
 
-- You can highlight code using `code-line-numbers` in the knitr chunk options
-- If you include pipes, e.g., `code-line-numbers: "|5|"` they will be highlighted incrementally (nice!)
-- Using `output-location:` (fragment, slide, column, column-fragment) controls when and where the output of the code is displayed
+-   You can highlight code using `code-line-numbers` in the knitr chunk options
+-   If you include pipes, e.g., `code-line-numbers: "|5|"` they will be highlighted incrementally (nice!)
+-   Using `output-location:` (fragment, slide, column, column-fragment) controls when and where the output of the code is displayed
 
 ```{r}
 #| label: fig-code-ex
@@ -475,12 +448,11 @@ ggplot(cars) +
   )
 ```
 
-
 ## Tabsets
 
 You can use tabsets pretty easily
 
-```
+```         
 ::: {.panel-tabset}
 
 ### Tab A
@@ -496,12 +468,9 @@ Content for `Tab B`
 
 (example on next slide)
 
+------------------------------------------------------------------------
 
-
----
-
-::: {.panel-tabset}
-
+::: panel-tabset
 ### Code
 
 ```{r}
@@ -519,7 +488,6 @@ plot_tabs <- mtcars |>
   )
 ```
 
-
 ### Output
 
 ```{r}
@@ -527,47 +495,33 @@ plot_tabs <- mtcars |>
 #| fig.cap: Tabset plot
 plot_tabs
 ```
-
 :::
-
-
-
-
-
-
 
 # Linguistics stuff {.transition}
 
 ## IPA symbols work in unicode
 
-- /ʃæ.'riŋ.ɡæn/
+-   /ʃæ.'riŋ.ɡæn/
 
-- /θðszʃʒʂʐçʝʎʟɘɵəɜ/
+-   /θðszʃʒʂʐçʝʎʟɘɵəɜ/
 
-
-|     Word    | Phonology | Phonetics            |
-| :---------- | --------- | -------------------- |
-| casa        | /ˈka.sa/  | [ˈka.sa]             |
-| taco (Sp.)  | /ˈta.ko/  | [ˈta.ko]             |
-| taco (Eng.) | /ˈta.ko/  | [ˈt<sup>h</sup>a.ko] |
-
-
-
-
-
+| Word        | Phonology | Phonetics              |
+|:------------|-----------|------------------------|
+| casa        | /ˈka.sa/  | \[ˈka.sa\]             |
+| taco (Sp.)  | /ˈta.ko/  | \[ˈta.ko\]             |
+| taco (Eng.) | /ˈta.ko/  | \[ˈt<sup>h</sup>a.ko\] |
 
 # Finishing up {.transition}
 
 ## This is the final slide {.final}
 
-![](https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/164.png){.absolute top=0 right=0 width="55" height="55"}
-
+![](https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/164.png){.absolute top="0" right="0" width="55" height="55"}
 
 </br>
 
 ### you can add your email, twitter, github, etc. info here
 
-Here is an example:  
+Here is an example:
 
 ```{r}
 #| label: pi-func
@@ -591,3 +545,4 @@ tibble::tibble(
     )) |>
   knitr::kable(align = c("r", "l"))
 ```
+
