@@ -676,30 +676,6 @@ plot_tabs
 
 Here is an example:
 
-```{r}
-#| label: pi-func
-#| eval: false
-#p_i <- function(link, icn) {
-  #out <- glue::glue("<a href='{link}'>{{{{< {icn} >}}}}</a>")
- # return(out)
-#}
-
-tibble::tibble(
-  ` ` = c(
-    p_i("mailto:joseph.casillas@rutgers.edu", "fa solid envelope"), 
-    p_i("www.jvcasillas.com/quarto-rutgers-theme/", "fa solid link"),
-    p_i("https://twitter.com/jvcasill", "fa brands twitter"), 
-    p_i("https://github.com/jvcasillas", "fa brands github")
-  ),
-  `  ` = c(
-    "joseph.casillas@rutgers.edu", 
-    "jvcasillas.com/quarto-rutgers-theme", 
-    "@jvcasill", 
-    "@jvcasillas"
-    )) |>
-  knitr::kable(align = c("r", "l"))
-```
-
 |                                                                             |                                    |
 |----------------------------------------------------------------------------:|:-----------------------------------|
 |   <a href='mailto:joseph.casillas@rutgers.edu'>{{< fa solid envelope >}}</a>|joseph.casillas@rutgers.edu         |
