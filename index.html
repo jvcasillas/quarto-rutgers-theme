@@ -7,7 +7,9 @@
 <link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="index_files/libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="index_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="index_files/libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="index_files/libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.3.299">
 
   <meta name="author" content="Joseph V. Casillas">
@@ -100,6 +102,8 @@
   <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
@@ -398,8 +402,13 @@
   <p class="institute">Rutgers University</p>
   <p class="date">2023-04-01</p>
 </section>
-<section id="the-basics" class="slide level2">
-<h2>The basics</h2>
+<section>
+<section id="the-basics" class="title-slide slide level1 transition center">
+<h1>The basics</h1>
+<p>Check me out</p>
+</section>
+<section id="standard-markdown-stuff" class="slide level2">
+<h2>Standard markdown stuff</h2>
 <ul>
 <li>Similar to <code>xaringan</code>, <strong>revealjs</strong> uses # for headers</li>
 <li>One difference is that they automatically generate a new slide
@@ -409,6 +418,8 @@
 </ul></li>
 <li>All other basic markdown syntax works the same:</li>
 </ul>
+<h3 id="h3-level">h3 level</h3>
+<h4 id="h4-level">h4 level</h4>
 </section>
 <section id="incremental-slides" class="slide level2">
 <h2>Incremental slides</h2>
@@ -472,6 +483,11 @@ Right column
 </div>
 </div>
 </div>
+</section></section>
+<section>
+<section id="some-new-stuff" class="title-slide slide level1 transition center">
+<h1>Some new stuff</h1>
+
 </section>
 <section id="long-slides" class="slide level2 smaller">
 <h2>Long slides?</h2>
@@ -570,38 +586,201 @@ This is my footer
 <p>This is my footer</p>
 </div>
 </section>
-<section id="ipa-symbols-work-in-unicode" class="slide level2">
-<h2>IPA symbols work in unicode</h2>
+<section id="export-to-pdf" class="slide level2">
+<h2>Export to pdf</h2>
+<p>You can use <code>pagedown::chrome_print("path-to-file.html")</code> to export the slides to pdf</p>
+<p>Another option is to type ‘e’</p>
+</section>
+<section id="iframes" class="slide level2">
+<h2>iframes</h2>
+<p>You can easily embed iframes (see next slide)</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a><span class="do">## iframes {background-iframe="https://www.jvcasillas.com"}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <ul>
-<li><p>/ʃæ.’riŋ.ɡæn/</p></li>
-<li><p>/θðszʃʒʂʐçʝʎʟɘɵəɜ/</p></li>
+<li>the website is embedded in the slide</li>
+<li>it defaults to full screen</li>
+<li>set <code>background-interactive</code> to true if you need to actually use the page</li>
 </ul>
-<table>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Word</th>
-<th>Phonology</th>
-<th>Phonetics</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">casa</td>
-<td>/ˈka.sa/</td>
-<td>[ˈka.sa]</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">taco (Sp.)</td>
-<td>/ˈta.ko/</td>
-<td>[ˈta.ko]</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">taco (Eng.)</td>
-<td>/ˈta.ko/</td>
-<td>[ˈt<sup>h</sup>a.ko]</td>
-</tr>
-</tbody>
-</table>
+</section>
+<section id="section" class="slide level2" data-background-iframe="https://www.jvcasillas.com">
+<h2></h2>
+</section>
+<section id="preview-links" class="slide level2">
+<h2>preview links</h2>
+<p>You can see the content of a link without opening a separate page by setting <code>preview-links: true</code></p>
+<p><a href="https://www.jvcasillas.com">An example</a></p>
+<p><a href="https://www.quarto.org">Another example</a></p>
+</section>
+<section id="sizing-things-up" class="slide level2">
+<h2>Sizing things up</h2>
+<pre><code>::: {.r-fit-text}
+Big Text
+:::</code></pre>
+<div class="r-fit-text">
+<p>Big Text</p>
+</div>
+</section>
+<section id="stretching-imgs" class="slide level2">
+<h2>Stretching imgs</h2>
+<pre><code>![](image.png){.r-stretch}</code></pre>
+<img data-src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/164.png" class="r-stretch">
+</section></section>
+<section>
+<section id="animations" class="title-slide slide level1 transition center">
+<h1>Animations</h1>
+
+</section>
+<section id="animations-explained" class="slide level2">
+<h2>Animations explained</h2>
+<pre><code>## {auto-animate=true}
+
+::: {style="margin-top: 100px;"}
+Animating content
+:::
+
+## {auto-animate=true}
+
+::: {style="margin-top: 200px; font-size: 3em; color: red;"}
+Animating content
+:::</code></pre>
+</section>
+<section id="section-1" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"></h2>
+<div style="margin-top: 100px;">
+<p>Look at me</p>
+</div>
+</section>
+<section id="section-2" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"></h2>
+<div style="margin-top: 200px; font-size: 4em; color: #cc0033;">
+<p>Look at you</p>
+</div>
+</section>
+<section id="section-3" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"></h2>
+<div style="margin-top: 600px; margin-left: 400px; font-size: 2em; color: black;">
+<p>Look at this</p>
+</div>
+</section>
+<section id="section-4" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"></h2>
+<div style="margin-top: 100px; margin-left: 100px; font-size: 4em; color: #cc0033;">
+<p>Look at this</p>
+</div>
+</section>
+<section id="you-can-animate-code-chunks-too" class="slide level2">
+<h2>You can animate code chunks too</h2>
+<pre><code>## {auto-animate="true"}
+
+```r
+# Fill in the spot we created for a plot
+output$phonePlot &lt;- renderPlot({
+  # Render a barplot
+})
+```
+
+## {auto-animate=true}
+
+```r
+# Fill in the spot we created for a plot
+output$phonePlot &lt;- renderPlot({
+  # Render a barplot
+  barplot(WorldPhones[,input$region]*1000, 
+          main=input$region,
+          ylab="Number of Telephones",
+          xlab="Year")
+})
+```</code></pre>
+</section>
+<section id="section-5" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"></h2>
+<div class="sourceCode" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb14-1" class="hljs-ln-code"><a href="#cb14-1"></a><span class="co"># Fill in the spot we created for a plot</span></span>
+<span id="cb14-2" class="hljs-ln-code"><a href="#cb14-2"></a>output<span class="sc">$</span>phonePlot <span class="ot">&lt;-</span> <span class="fu">renderPlot</span>({</span>
+<span id="cb14-3" class="hljs-ln-code"><a href="#cb14-3"></a>  <span class="co"># Render a barplot</span></span>
+<span id="cb14-4" class="hljs-ln-code"><a href="#cb14-4"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="section-6" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"></h2>
+<div class="sourceCode" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb15-1" class="hljs-ln-code"><a href="#cb15-1"></a><span class="co"># Fill in the spot we created for a plot</span></span>
+<span id="cb15-2" class="hljs-ln-code"><a href="#cb15-2"></a>output<span class="sc">$</span>phonePlot <span class="ot">&lt;-</span> <span class="fu">renderPlot</span>({</span>
+<span id="cb15-3" class="hljs-ln-code"><a href="#cb15-3"></a>  <span class="co"># Render a barplot</span></span>
+<span id="cb15-4" class="hljs-ln-code"><a href="#cb15-4"></a>  <span class="fu">barplot</span>(WorldPhones[,input<span class="sc">$</span>region]<span class="sc">*</span><span class="dv">1000</span>, </span>
+<span id="cb15-5" class="hljs-ln-code"><a href="#cb15-5"></a>          <span class="at">main=</span>input<span class="sc">$</span>region,</span>
+<span id="cb15-6" class="hljs-ln-code"><a href="#cb15-6"></a>          <span class="at">ylab=</span><span class="st">"Number of Telephones"</span>,</span>
+<span id="cb15-7" class="hljs-ln-code"><a href="#cb15-7"></a>          <span class="at">xlab=</span><span class="st">"Year"</span>)</span>
+<span id="cb15-8" class="hljs-ln-code"><a href="#cb15-8"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="section-7" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"></h2>
+<p>cool</p>
+</section>
+<section id="section-8" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"></h2>
+<p>is</p>
+<p>cool</p>
+</section>
+<section id="section-9" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"></h2>
+<p>animation</p>
+<p>is</p>
+<p>cool</p>
+</section>
+<section id="section-10" class="slide level2" data-auto-animate="true" data-auto-animate-easing="ease-in-out">
+<h2 data-id="quarto-animate-title"></h2>
+<div class="r-hstack">
+<div data-id="box1" data-auto-animate-delay="0" style="background: #2780e3; width: 200px; height: 150px; margin: 10px;">
+
+</div>
+<div data-id="box2" data-auto-animate-delay="0.1" style="background: #3fb618; width: 200px; height: 150px; margin: 10px;">
+
+</div>
+<div data-id="box3" data-auto-animate-delay="0.2" style="background: #e83e8c; width: 200px; height: 150px; margin: 10px;">
+
+</div>
+</div>
+</section>
+<section id="section-11" class="slide level2" data-auto-animate="true" data-auto-animate-easing="ease-in-out">
+<h2 data-id="quarto-animate-title"></h2>
+<div class="r-stack">
+<div data-id="box1" style="background: #2780e3; width: 350px; height: 350px; border-radius: 200px;">
+
+</div>
+<div data-id="box2" style="background: #3fb618; width: 250px; height: 250px; border-radius: 200px;">
+
+</div>
+<div data-id="box3" style="background: #e83e8c; width: 150px; height: 150px; border-radius: 200px;">
+
+</div>
+</div>
+</section></section>
+<section>
+<section id="fragments" class="title-slide slide level1 transition center">
+<h1>Fragments</h1>
+
+</section>
+<section class="slide level2">
+
+<div class="fragment">
+<p>Fade in</p>
+</div>
+<div class="fragment fade-out">
+<p>Fade out</p>
+</div>
+<div class="fragment highlight-red">
+<p>Highlight red</p>
+</div>
+<div class="fragment fade-in-then-out">
+<p>Fade in, then out</p>
+</div>
+<div class="fragment fade-up">
+<p>Slide up while fading in</p>
+</div>
+</section></section>
+<section>
+<section id="code-stuff" class="title-slide slide level1 transition center">
+<h1>Code stuff</h1>
+
 </section>
 <section id="standard-slide-with-r-code" class="slide level2 smaller">
 <h2>Standard slide with R code</h2>
@@ -611,16 +790,16 @@ This is my footer
 <li>Using <code>output-location:</code> (fragment, slide, column, column-fragment) controls when and where the output of the code is displayed</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9" data-code-line-numbers="|1|2|3|4|5|6|"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a><span class="fu">library</span>(<span class="st">"tidyverse"</span>)</span>
-<span id="cb9-2"><a href="#cb9-2"></a><span class="fu">ggplot</span>(cars) <span class="sc">+</span> </span>
-<span id="cb9-3"><a href="#cb9-3"></a>  <span class="fu">aes</span>(<span class="at">x =</span> dist, <span class="at">y =</span> speed) <span class="sc">+</span> </span>
-<span id="cb9-4"><a href="#cb9-4"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span> </span>
-<span id="cb9-5"><a href="#cb9-5"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">'lm'</span>, <span class="at">formula =</span> y <span class="sc">~</span> <span class="fu">poly</span>(x, <span class="dv">2</span>)) <span class="sc">+</span> </span>
-<span id="cb9-6"><a href="#cb9-6"></a>  <span class="fu">theme_bw</span>(<span class="at">base_family =</span> <span class="st">"Palatino"</span>, <span class="at">base_size =</span> <span class="dv">20</span>) <span class="sc">+</span> </span>
-<span id="cb9-7"><a href="#cb9-7"></a>  <span class="fu">theme</span>(</span>
-<span id="cb9-8"><a href="#cb9-8"></a>    <span class="at">panel.grid.major =</span> <span class="fu">element_line</span>(<span class="at">colour =</span> <span class="st">'grey90'</span>, <span class="at">size =</span> <span class="fl">0.15</span>),</span>
-<span id="cb9-9"><a href="#cb9-9"></a>    <span class="at">panel.grid.minor =</span> <span class="fu">element_line</span>(<span class="at">colour =</span> <span class="st">'grey90'</span>, <span class="at">size =</span> <span class="fl">0.15</span>)</span>
-<span id="cb9-10"><a href="#cb9-10"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb16" data-code-line-numbers="|1|2|3|4|5|6|"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1"></a><span class="fu">library</span>(<span class="st">"tidyverse"</span>)</span>
+<span id="cb16-2"><a href="#cb16-2"></a><span class="fu">ggplot</span>(cars) <span class="sc">+</span> </span>
+<span id="cb16-3"><a href="#cb16-3"></a>  <span class="fu">aes</span>(<span class="at">x =</span> dist, <span class="at">y =</span> speed) <span class="sc">+</span> </span>
+<span id="cb16-4"><a href="#cb16-4"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span> </span>
+<span id="cb16-5"><a href="#cb16-5"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">'lm'</span>, <span class="at">formula =</span> y <span class="sc">~</span> <span class="fu">poly</span>(x, <span class="dv">2</span>)) <span class="sc">+</span> </span>
+<span id="cb16-6"><a href="#cb16-6"></a>  <span class="fu">theme_bw</span>(<span class="at">base_family =</span> <span class="st">"Palatino"</span>, <span class="at">base_size =</span> <span class="dv">20</span>) <span class="sc">+</span> </span>
+<span id="cb16-7"><a href="#cb16-7"></a>  <span class="fu">theme</span>(</span>
+<span id="cb16-8"><a href="#cb16-8"></a>    <span class="at">panel.grid.major =</span> <span class="fu">element_line</span>(<span class="at">colour =</span> <span class="st">'grey90'</span>, <span class="at">size =</span> <span class="fl">0.15</span>),</span>
+<span id="cb16-9"><a href="#cb16-9"></a>    <span class="at">panel.grid.minor =</span> <span class="fu">element_line</span>(<span class="at">colour =</span> <span class="st">'grey90'</span>, <span class="at">size =</span> <span class="fl">0.15</span>)</span>
+<span id="cb16-10"><a href="#cb16-10"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
 </section>
@@ -656,16 +835,16 @@ Content for `Tab B`
 <div class="tab-content">
 <div id="tabset-1-1">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1"></a>plot_tabs <span class="ot">&lt;-</span> mtcars <span class="sc">|&gt;</span></span>
-<span id="cb11-2"><a href="#cb11-2"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span> </span>
-<span id="cb11-3"><a href="#cb11-3"></a>  <span class="fu">aes</span>(<span class="at">x =</span> drat, <span class="at">y =</span> mpg) <span class="sc">+</span> </span>
-<span id="cb11-4"><a href="#cb11-4"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span> </span>
-<span id="cb11-5"><a href="#cb11-5"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> lm, <span class="at">formula =</span> <span class="st">"y ~ x"</span>) <span class="sc">+</span> </span>
-<span id="cb11-6"><a href="#cb11-6"></a>  <span class="fu">theme_bw</span>(<span class="at">base_family =</span> <span class="st">"Palatino"</span>, <span class="at">base_size =</span> <span class="dv">20</span>) <span class="sc">+</span> </span>
-<span id="cb11-7"><a href="#cb11-7"></a>  <span class="fu">theme</span>(</span>
-<span id="cb11-8"><a href="#cb11-8"></a>    <span class="at">panel.grid.major =</span> <span class="fu">element_line</span>(<span class="at">colour =</span> <span class="st">'grey90'</span>, <span class="at">size =</span> <span class="fl">0.15</span>),</span>
-<span id="cb11-9"><a href="#cb11-9"></a>    <span class="at">panel.grid.minor =</span> <span class="fu">element_line</span>(<span class="at">colour =</span> <span class="st">'grey90'</span>, <span class="at">size =</span> <span class="fl">0.15</span>)</span>
-<span id="cb11-10"><a href="#cb11-10"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1"></a>plot_tabs <span class="ot">&lt;-</span> mtcars <span class="sc">|&gt;</span></span>
+<span id="cb18-2"><a href="#cb18-2"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span> </span>
+<span id="cb18-3"><a href="#cb18-3"></a>  <span class="fu">aes</span>(<span class="at">x =</span> drat, <span class="at">y =</span> mpg) <span class="sc">+</span> </span>
+<span id="cb18-4"><a href="#cb18-4"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span> </span>
+<span id="cb18-5"><a href="#cb18-5"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> lm, <span class="at">formula =</span> <span class="st">"y ~ x"</span>) <span class="sc">+</span> </span>
+<span id="cb18-6"><a href="#cb18-6"></a>  <span class="fu">theme_bw</span>(<span class="at">base_family =</span> <span class="st">"Palatino"</span>, <span class="at">base_size =</span> <span class="dv">20</span>) <span class="sc">+</span> </span>
+<span id="cb18-7"><a href="#cb18-7"></a>  <span class="fu">theme</span>(</span>
+<span id="cb18-8"><a href="#cb18-8"></a>    <span class="at">panel.grid.major =</span> <span class="fu">element_line</span>(<span class="at">colour =</span> <span class="st">'grey90'</span>, <span class="at">size =</span> <span class="fl">0.15</span>),</span>
+<span id="cb18-9"><a href="#cb18-9"></a>    <span class="at">panel.grid.minor =</span> <span class="fu">element_line</span>(<span class="at">colour =</span> <span class="st">'grey90'</span>, <span class="at">size =</span> <span class="fl">0.15</span>)</span>
+<span id="cb18-10"><a href="#cb18-10"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <div id="tabset-1-2">
@@ -682,40 +861,84 @@ Content for `Tab B`
 </div>
 </div>
 </div>
-</section>
+</section></section>
 <section>
-<section id="backgrounds" class="title-slide slide level1 center" data-background-color="#000">
-<h1>Backgrounds</h1>
+<section id="linguistics-stuff" class="title-slide slide level1 transition center">
+<h1>Linguistics stuff</h1>
 
 </section>
-<section id="this-is-the-final-slide" class="slide level2" data-background-color="#000">
+<section id="ipa-symbols-work-in-unicode" class="slide level2">
+<h2>IPA symbols work in unicode</h2>
+<ul>
+<li><p>/ʃæ.’riŋ.ɡæn/</p></li>
+<li><p>/θðszʃʒʂʐçʝʎʟɘɵəɜ/</p></li>
+</ul>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Word</th>
+<th>Phonology</th>
+<th>Phonetics</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">casa</td>
+<td>/ˈka.sa/</td>
+<td>[ˈka.sa]</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">taco (Sp.)</td>
+<td>/ˈta.ko/</td>
+<td>[ˈta.ko]</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">taco (Eng.)</td>
+<td>/ˈta.ko/</td>
+<td>[ˈt<sup>h</sup>a.ko]</td>
+</tr>
+</tbody>
+</table>
+</section></section>
+<section>
+<section id="finishing-up" class="title-slide slide level1 transition center">
+<h1>Finishing up</h1>
+
+</section>
+<section id="this-is-the-final-slide" class="slide level2 final">
 <h2>This is the final slide</h2>
+<p><img data-src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/164.png" class="absolute" style="top: 0px; right: 0px; width: 55px; height: 55px; "></p>
+<p><br></p>
 <h3 id="you-can-add-your-email-twitter-github-etc.-info-here">you can add your email, twitter, github, etc. info here</h3>
 <p>Here is an example:</p>
+<div class="cell">
+<div class="cell-output-display">
 <table>
 <colgroup>
-<col style="width: 74%">
-<col style="width: 25%">
+<col style="width: 68%">
+<col style="width: 31%">
 </colgroup>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;"><a href="mailto:joseph.casillas@rutgers.edu"><i class="fa fa-paper-plane fa-fw"></i></a></td>
+<td style="text-align: right;"><a href="mailto:joseph.casillas@rutgers.edu"><i class="fa-solid fa-envelope" aria-label="envelope"></i></a></td>
 <td style="text-align: left;">joseph.casillas@rutgers.edu</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><a href="http://www.jvcasillas.com/ru_xaringan/slides/index.html"><i class="fa fa-link fa-fw"></i></a></td>
-<td style="text-align: left;">jvcasillas.com/ru_xaringan/slides</td>
+<td style="text-align: right;"><a href="www.jvcasillas.com/quarto-rutgers-theme/"><i class="fa-solid fa-link" aria-label="link"></i></a></td>
+<td style="text-align: left;">jvcasillas.com/quarto-rutgers-theme</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><a href="http://twitter.com/jvcasill"><i class="fa fa-twitter fa-fw"></i></a></td>
+<td style="text-align: right;"><a href="https://twitter.com/jvcasill"><i class="fa-brands fa-twitter" aria-label="twitter"></i></a></td>
 <td style="text-align: left;"><span class="citation" data-cites="jvcasill">@jvcasill</span></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><a href="http://github.com/jvcasillas"><i class="fa fa-github fa-fw"></i></a></td>
+<td style="text-align: right;"><a href="https://github.com/jvcasillas"><i class="fa-brands fa-github" aria-label="github"></i></a></td>
 <td style="text-align: left;"><span class="citation" data-cites="jvcasillas">@jvcasillas</span></td>
 </tr>
 </tbody>
 </table>
+</div>
+</div>
 <div class="footer footer-default">
 
 </div>
@@ -731,6 +954,7 @@ Content for `Tab B`
   <script src="index_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
   <script src="index_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
   <script src="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
   <script src="index_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
@@ -752,7 +976,8 @@ Content for `Tab B`
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
-'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'chalkboard': {"buttons":true},
 'smaller': false,
  
         // Display controls in the bottom right corner
@@ -923,7 +1148,7 @@ Content for `Tab B`
         },
 
         // reveal.js plugins
-        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
 
           RevealMath,
           RevealNotes,

@@ -12,13 +12,22 @@ execute:
   dpi: 300
 ---
 
-## The basics
+# The basics {.transition}
+
+Check me out
+
+## Standard markdown stuff
 
 - Similar to `xaringan`, **revealjs** uses \# for headers
 - One difference is that they automatically generate a new slide
   - Two (\#\#) for a level two header at the top of a slide
   - One (\#) is centered vertically (good for a section divider)
 - All other basic markdown syntax works the same: 
+
+### h3 level
+
+#### h4 level
+
 
 ## Incremental slides
 
@@ -104,6 +113,8 @@ Right column
 
 ::::
 
+
+# Some new stuff {.transition}
 
 ## Long slides? {.smaller}
 
@@ -215,20 +226,229 @@ This is my footer
 This is my footer
 :::
 
+## Export to pdf
 
-## IPA symbols work in unicode
+You can use `pagedown::chrome_print("path-to-file.html")` to export the slides to pdf
 
-- /ʃæ.'riŋ.ɡæn/
+Another option is to type 'e'
 
-- /θðszʃʒʂʐçʝʎʟɘɵəɜ/
+## iframes
+
+You can easily embed iframes (see next slide)
+
+```{r}
+#| echo: true
+#| eval: false
+## iframes {background-iframe="https://www.jvcasillas.com"}
+```
+
+- the website is embedded in the slide
+- it defaults to full screen
+- set `background-interactive` to true if you need to actually use the page
+
+## {background-iframe="https://www.jvcasillas.com"}
+
+## preview links
+
+You can see the content of a link without opening a separate page by setting `preview-links: true`
+
+[An example](https://www.jvcasillas.com)
+
+[Another example](https://www.quarto.org)
+
+## Sizing things up
+
+```
+::: {.r-fit-text}
+Big Text
+:::
+```
+
+::: {.r-fit-text}
+Big Text
+:::
+
+## Stretching imgs
+
+```
+![](image.png){.r-stretch}
+```
+
+![](https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/164.png){.r-stretch}
 
 
-|     Word    | Phonology | Phonetics            |
-| :---------- | --------- | -------------------- |
-| casa        | /ˈka.sa/  | [ˈka.sa]             |
-| taco (Sp.)  | /ˈta.ko/  | [ˈta.ko]             |
-| taco (Eng.) | /ˈta.ko/  | [ˈt<sup>h</sup>a.ko] |
 
+
+
+
+# Animations {.transition}
+
+## Animations explained
+
+```
+## {auto-animate=true}
+
+::: {style="margin-top: 100px;"}
+Animating content
+:::
+
+## {auto-animate=true}
+
+::: {style="margin-top: 200px; font-size: 3em; color: red;"}
+Animating content
+:::
+```
+
+## {auto-animate=true}
+
+::: {style="margin-top: 100px;"}
+Look at me
+:::
+
+## {auto-animate=true}
+
+::: {style="margin-top: 200px; font-size: 4em; color: #cc0033;"}
+Look at you
+:::
+
+## {auto-animate=true}
+
+::: {style="margin-top: 600px; margin-left: 400px; font-size: 2em; color: black;"}
+Look at this
+:::
+
+## {auto-animate=true}
+
+::: {style="margin-top: 100px; margin-left: 100px; font-size: 4em; color: #cc0033;"}
+Look at this
+:::
+
+## You can animate code chunks too
+
+````
+## {auto-animate="true"}
+
+```r
+# Fill in the spot we created for a plot
+output$phonePlot <- renderPlot({
+  # Render a barplot
+})
+```
+
+## {auto-animate=true}
+
+```r
+# Fill in the spot we created for a plot
+output$phonePlot <- renderPlot({
+  # Render a barplot
+  barplot(WorldPhones[,input$region]*1000, 
+          main=input$region,
+          ylab="Number of Telephones",
+          xlab="Year")
+})
+```
+````
+
+## {auto-animate="true"}
+
+```r
+# Fill in the spot we created for a plot
+output$phonePlot <- renderPlot({
+  # Render a barplot
+})
+```
+
+## {auto-animate=true}
+
+```r
+# Fill in the spot we created for a plot
+output$phonePlot <- renderPlot({
+  # Render a barplot
+  barplot(WorldPhones[,input$region]*1000, 
+          main=input$region,
+          ylab="Number of Telephones",
+          xlab="Year")
+})
+```
+
+## {auto-animate=true}
+
+cool
+
+## {auto-animate=true}
+
+is 
+
+cool
+
+## {auto-animate=true}
+
+animation
+
+is 
+
+cool
+
+## {auto-animate=true auto-animate-easing="ease-in-out"}
+
+::: {.r-hstack}
+::: {data-id="box1" auto-animate-delay="0" style="background: #2780e3; width: 200px; height: 150px; margin: 10px;"}
+:::
+
+::: {data-id="box2" auto-animate-delay="0.1" style="background: #3fb618; width: 200px; height: 150px; margin: 10px;"}
+:::
+
+::: {data-id="box3" auto-animate-delay="0.2" style="background: #e83e8c; width: 200px; height: 150px; margin: 10px;"}
+:::
+:::
+
+## {auto-animate=true auto-animate-easing="ease-in-out"}
+
+::: {.r-stack}
+::: {data-id="box1" style="background: #2780e3; width: 350px; height: 350px; border-radius: 200px;"}
+:::
+
+::: {data-id="box2" style="background: #3fb618; width: 250px; height: 250px; border-radius: 200px;"}
+:::
+
+::: {data-id="box3" style="background: #e83e8c; width: 150px; height: 150px; border-radius: 200px;"}
+:::
+:::
+
+
+
+
+
+# Fragments {.transition}
+
+---
+
+::: {.fragment}
+Fade in
+:::
+
+::: {.fragment .fade-out}
+Fade out
+:::
+
+::: {.fragment .highlight-red}
+Highlight red
+:::
+
+::: {.fragment .fade-in-then-out}
+Fade in, then out
+:::
+
+::: {.fragment .fade-up}
+Slide up while fading in
+:::
+
+
+
+
+
+
+# Code stuff {.transition}
 
 ## Standard slide with R code {.smaller}
 
@@ -312,20 +532,62 @@ plot_tabs
 
 
 
-# Backgrounds {background-color="#000"}
 
 
 
 
-## This is the final slide {background-color="#000"}
+# Linguistics stuff {.transition}
+
+## IPA symbols work in unicode
+
+- /ʃæ.'riŋ.ɡæn/
+
+- /θðszʃʒʂʐçʝʎʟɘɵəɜ/
+
+
+|     Word    | Phonology | Phonetics            |
+| :---------- | --------- | -------------------- |
+| casa        | /ˈka.sa/  | [ˈka.sa]             |
+| taco (Sp.)  | /ˈta.ko/  | [ˈta.ko]             |
+| taco (Eng.) | /ˈta.ko/  | [ˈt<sup>h</sup>a.ko] |
+
+
+
+
+
+
+# Finishing up {.transition}
+
+## This is the final slide {.final}
+
+![](https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/164.png){.absolute top=0 right=0 width="55" height="55"}
+
+
+</br>
 
 ### you can add your email, twitter, github, etc. info here
 
 Here is an example:  
 
-|                                                                                                    |                                   |
-| :------------------------------------------------------------------------------------------------- | :-------------------------------- |
-| <a href="mailto:joseph.casillas@rutgers.edu"><i class="fa fa-paper-plane fa-fw"></i>               | joseph.casillas@rutgers.edu       |
-| <a href="http://www.jvcasillas.com/ru_xaringan/slides/index.html"><i class="fa fa-link fa-fw"></i> | jvcasillas.com/ru_xaringan/slides |
-| <a href="http://twitter.com/jvcasill"><i class="fa fa-twitter fa-fw"></i>                          | @jvcasill                         |
-| <a href="http://github.com/jvcasillas"><i class="fa fa-github fa-fw"></i>                          | @jvcasillas                       |
+```{r}
+#| label: pi-func
+p_i <- function(link, icn) {
+  out <- glue::glue("<a href='{link}'>{{{{< {icn} >}}}}</a>")
+  return(out)
+}
+
+tibble::tibble(
+  ` ` = c(
+    p_i("mailto:joseph.casillas@rutgers.edu", "fa solid envelope"), 
+    p_i("www.jvcasillas.com/quarto-rutgers-theme/", "fa solid link"),
+    p_i("https://twitter.com/jvcasill", "fa brands twitter"), 
+    p_i("https://github.com/jvcasillas", "fa brands github")
+  ),
+  `  ` = c(
+    "joseph.casillas@rutgers.edu", 
+    "jvcasillas.com/quarto-rutgers-theme", 
+    "@jvcasill", 
+    "@jvcasillas"
+    )) |>
+  knitr::kable(align = c("r", "l"))
+```
