@@ -649,17 +649,26 @@ plot_tabs
 
 ## IPA symbols work in unicode
 
-- /ʃæ.'riŋ.ɡæn/
+- [/ʃæ.ˈriŋ.gæn/]{.ipa} i.e., `[/ʃæ.ˈriŋ.gæn/]{.ipa}` 
 
-- /θðszʃʒʂʐçʝʎʟɘɵəɜ/
+- [a æ ɑ ɒ ɐ b ɓ β ʙ c ç d ɖ ɗ d͡z d͡ʑ d͡ʒ e ɘ ɛ ɜ ɞ ə f ɸ g ɡ ɠ ɢ ʛ ɰ h ɦ ħ ɧ ɥ ʜ i ɨ ɪ j ʝ ɟ ʄ k l ɫ ɬ ɮ ɭ ʟ m ɱ n ɳ ɲ ŋ ɴ o ø ɵ ɔ œ ɶ p q r ɹ ɾ ɽ ɻ ɺ ʁ ʀ s ʂ ɕ ʃ t ʈ t͡s t͡ʂ t͡ʃ u ʉ ʊ ɯ ʌ v ⱱ ʋ w ʍ x ɣ χ y ʏ ʎ z ʐ ʑ ʒ θ ð ʔ ʡ ʕ ʢ ʘ ǀ ǃ ǂ ǁ]{.ipa}
 
-| Word        | Phonology | Phonetics              |
-|:------------|-----------|------------------------|
-| casa        | /ˈka.sa/  | \[ˈka.sa\]             |
-| taco (Sp.)  | /ˈta.ko/  | \[ˈta.ko\]             |
-| taco (Eng.) | /ˈta.ko/  | \[ˈt<sup>h</sup>a.ko\] |
+- [Diacritics: e̟ e̘ e̺ e̤ ë e̪ e̯ ĕ e̻ e̼ e̞ e̽ ẽ e̝ e̠ e̙ e˞ e̜ e̹ e̩ t͡s e̚ ḛ e̬ e̥ ˈ ˌ ː ˑ ʰ ʷ ˡ ⁿ ʲ ˤ ˠ ˥ ˦ ˧ ˨ ˩]{.ipa} 
+
+- [Joined affricates: ʦ ʨ ʧ ʣ ʥ ʤ]{.ipa}
 
 
+## Clean tables
+
+- See @tbl-ex.
+
+| Word        | Phonology        | Phonetics                    |
+|:------------|:-----------------|:-----------------------------|
+| casa        | [/ˈka.sa/]{.ipa} | [[ˈka.sa]]{.ipa}             |
+| taco (Sp.)  | [/ˈta.ko/]{.ipa} | [[ˈta.ko]]{.ipa}             |
+| taco (Eng.) | [/ˈta.ko/]{.ipa} | [[ˈt<sup>h</sup>a.ko]]{.ipa} |
+
+: This is a table caption {#tbl-ex tbl-colwidths="[50,50,50]"}
 
 
 

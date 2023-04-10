@@ -1,6 +1,9 @@
 /*-- scss:defaults --*/
 
 @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charis+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400&display=swap');
 
 // fonts
 $font-family-sans-serif: "Palatino Linotype", "Book Antiqua", Palatino,
@@ -76,8 +79,8 @@ h3 {
 
 /* remove color from tables */
 table, th, td {
-  border-top: 2px solid;
-  border-color: white;
+  border-top: 2px solid !important;
+  border-color: white !important;
   line-height: 0.75em !important;
 }
 
@@ -126,4 +129,10 @@ table, th, td {
   border-top: 2px solid;
   border-color: #272822;
   line-height: 0.75em !important;
+}
+
+.ipa {
+  //font-family: "Noto Sans" !important;
+  //font-family: "Charis Serif" !important;
+  font-family: "Gentium Plus" !important;
 }
