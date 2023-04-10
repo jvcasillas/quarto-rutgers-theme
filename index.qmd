@@ -663,12 +663,12 @@ plot_tabs
 - See @tbl-ex.
 
 | Word        | Phonology        | Phonetics                    |
-|:------------|:-----------------|:-----------------------------|
+|:------------|-----------------:|-----------------------------:|
 | casa        | [/ˈka.sa/]{.ipa} | [[ˈka.sa]]{.ipa}             |
 | taco (Sp.)  | [/ˈta.ko/]{.ipa} | [[ˈta.ko]]{.ipa}             |
 | taco (Eng.) | [/ˈta.ko/]{.ipa} | [[ˈt<sup>h</sup>a.ko]]{.ipa} |
 
-: This is a table caption {#tbl-ex tbl-colwidths="[50,50,50]"}
+: This is a table caption {#tbl-ex tbl-colwidths="[25,25,25]"}
 
 
 
@@ -691,3 +691,5 @@ Here is an example:
 | <a href='www.jvcasillas.com/quarto-rutgers-theme/'>{{< fa solid link >}}</a>|jvcasillas.com/quarto-rutgers-theme |
 |         <a href='https://twitter.com/jvcasill'>{{< fa brands twitter >}}</a>|@jvcasill                           |
 |         <a href='https://github.com/jvcasillas'>{{< fa brands github >}}</a>|@jvcasillas                         |
+
+: {tbl-colwidths="[25,75]"}

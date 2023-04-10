@@ -1,26 +1,30 @@
 /*-- scss:defaults --*/
 
+// Load fonts 
 @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
 @import url('https://fonts.googleapis.com/css2?family=Gentium+Plus&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Charis+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400&display=swap');
 
-// fonts
+// Assign fonts
 $font-family-sans-serif: "Palatino Linotype", "Book Antiqua", Palatino,
   FreeSerif, serif !default;
+$presentation-heading-font: "Yanone Kaffeesatz", "Palatino Linotype", "Book Antiqua", Palatino, sans-serif, !default;
 
 // headings
-$presentation-heading-font: "Yanone Kaffeesatz", "Palatino Linotype", "Book Antiqua", Palatino, sans-serif, !default;
 $presentation-heading-color: #cc0033 !default;
 $presentation-heading-font-weight: 400 !default;
 $presentation-title-slide-text-align: left !default;
-
-
 $presentation-h1-font-size: 2.0em !default;
 $presentation-h2-font-size: 1.75em !default;
 $presentation-h3-font-size: 1.25em !default;
 $presentation-h3-color: #818181 !default;
 
+h3 {
+  color: #616161 !important;
+}
+
+// Other
 $body-bg: #fff;
 $body-color: #000;
 $link-color: #cc0033;
@@ -37,8 +41,7 @@ $selection-color: #fff !default;
 
 
 
-
-
+// Title slide
 #title-slide {
   text-align: left;
 }
@@ -72,16 +75,19 @@ $selection-color: #fff !default;
 
 
 
-
-h3 {
-  color: #616161 !important;
-}
-
-/* remove color from tables */
+// Tables
 table, th, td {
   border-top: 2px solid !important;
-  border-color: white !important;
+  border-color: transparent !important;
   line-height: 0.75em !important;
+  padding-bottom: 10px !important;
+}
+
+caption {
+  padding-top: 50px !important;
+  padding-left: 20px !important;
+  text-align: left !important;
+  color: #818181 !important;
 }
 
 
