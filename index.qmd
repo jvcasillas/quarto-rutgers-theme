@@ -386,7 +386,7 @@ output$phonePlot <- renderPlot({
 
 ## {auto-animate="true" #animation-ex2a-id data-menu-title="code animation example"}
 
-``` r
+```r
 # Fill in the spot we created for a plot
 output$phonePlot <- renderPlot({
   # Render a barplot
@@ -395,7 +395,7 @@ output$phonePlot <- renderPlot({
 
 ## {auto-animate="true" #animation-ex2b-id data-menu-title="code animation example"}
 
-``` r
+```r
 # Fill in the spot we created for a plot
 output$phonePlot <- renderPlot({
   # Render a barplot
@@ -669,6 +669,64 @@ plot_tabs
 | taco (Eng.) | [/ˈta.ko/]{.ipa} | [[ˈt<sup>h</sup>a.ko]]{.ipa} |
 
 : This is a table caption {#tbl-ex tbl-colwidths="[25,25,25]"}
+
+
+
+
+
+
+# Extras
+
+## Social embeds: Github gists {.scrollable}
+
+Embed a gist using: 
+
+``` {.markdown shortcodes="false"}
+{{< gist <USERNAME> <GIST_ID> >}}
+``` 
+
+{{< gist jvcasillas 7087d4d4d7ea977cf457ac180132151d >}}
+
+## Social embeds: Twitter {.scrollable}
+
+Embed a tweet using: 
+
+``` {.markdown shortcodes="false"}
+{{< tweet <USERNAME> <ID> >}}
+``` 
+
+{{< tweet user=juliesquid id=1557485909486059523 >}}
+
+
+## Social embeds: Vimeo
+
+``` {.markdown shortcodes="false"}
+{{< vimeo <VIDEO_ID> >}}
+```
+
+{{< vimeo 22439234 >}}
+
+## Social embeds: YouTube
+
+``` {.markdown shortcodes="false"}
+{{< youtube <VIDEO_ID> >}}
+```
+
+{{< youtube SyK81rX5P5I >}}
+
+## QR codes
+
+
+``` {.markdown shortcodes="false"}
+{{< qrcode link id width=100 height=100 colorDark='#cc0033' >}}
+```
+
+{{< qrcode www.jvcasillas.com homepage width=100 height=100 colorDark='#cc0033' >}}
+
+
+
+
+
 
 
 
