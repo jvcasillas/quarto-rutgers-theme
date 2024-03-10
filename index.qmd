@@ -107,6 +107,19 @@ Right column
 :::
 :::
 
+
+# Text stuff
+
+## Centering
+
+[this is centered]{.ch}
+
+[this is centered]{style="text-align:'center'"}
+
+
+
+
+
 # Some new stuff {.transition}
 
 ## Long slides? {.smaller}
