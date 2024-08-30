@@ -11,10 +11,10 @@
 <script src="index_files/libs/quarto-contrib/qrcodejs-v1.0.0/qrcode.js"></script>
 <link href="index_files/libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="index_files/libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.4.550">
+  <meta name="generator" content="quarto-1.5.45">
 
   <meta name="author" content="Joseph V. Casillas">
-  <meta name="dcterms.date" content="2024-03-10">
+  <meta name="dcterms.date" content="2024-08-30">
   <title>Quarto Rutgers theme</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -46,7 +46,7 @@
     }
     @media print {
     pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
     }
     pre.numberSource code
       { counter-reset: source-line 0; }
@@ -74,7 +74,7 @@
     code span.at { color: #657422; } /* Attribute */
     code span.bn { color: #ad0000; } /* BaseN */
     code span.bu { } /* BuiltIn */
-    code span.cf { color: #003b4f; } /* ControlFlow */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
     code span.ch { color: #20794d; } /* Char */
     code span.cn { color: #8f5902; } /* Constant */
     code span.co { color: #5e5e5e; } /* Comment */
@@ -88,7 +88,7 @@
     code span.fu { color: #4758ab; } /* Function */
     code span.im { color: #00769e; } /* Import */
     code span.in { color: #5e5e5e; } /* Information */
-    code span.kw { color: #003b4f; } /* Keyword */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
     code span.op { color: #5e5e5e; } /* Operator */
     code span.ot { color: #003b4f; } /* Other */
     code span.pp { color: #ad0000; } /* Preprocessor */
@@ -405,7 +405,7 @@
   <h3 class="subtitle">Port of the ru_xaringan theme using quarto markdown</h3>
   <p class="author">Joseph V. Casillas</p>
   <p class="institute">Rutgers University</p>
-  <p class="date">2024-03-10</p>
+  <p class="date">2024-08-30</p>
 </section>
 <section>
 <section id="the-basics" class="title-slide slide level1 transition center">
@@ -827,7 +827,7 @@ output$phonePlot &lt;- renderPlot({
 <h2></h2>
 <div class="cell" data-reveal="true" data-fig-width="6" data-layout-align="default">
 <div class="cell-output-display">
-<div id="fig-mermaid1" class="quarto-figure quarto-figure-center quarto-float">
+<div id="fig-mermaid1" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-fig">
 <div aria-describedby="fig-mermaid1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div>
@@ -856,7 +856,7 @@ Figure&nbsp;1: How Quarto orchestrates rendering of documents: start with a qmd 
 <h2></h2>
 <div class="cell" data-reveal="true" data-layout-align="default">
 <div class="cell-output-display">
-<div id="fig-mermaid2" class="quarto-figure quarto-figure-center quarto-float">
+<div id="fig-mermaid2" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-fig">
 <div aria-describedby="fig-mermaid2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div>
@@ -882,7 +882,7 @@ Figure&nbsp;2: Something about RRs.
 <h2></h2>
 <div class="cell" data-reveal="true" data-layout-align="default">
 <div class="cell-output-display">
-<div id="fig-mermaid3" class="quarto-figure quarto-figure-center quarto-float">
+<div id="fig-mermaid3" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-fig">
 <div aria-describedby="fig-mermaid3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div>
@@ -910,7 +910,7 @@ Figure&nbsp;3: You can use this to show the timeline of a project.
 <h2>Dot diagrams</h2>
 <div class="cell" data-layout-align="default">
 <div class="cell-output-display">
-<div id="fig-dot" class="quarto-figure quarto-figure-center quarto-float">
+<div id="fig-dot" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-fig">
 <div aria-describedby="fig-dot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div>
@@ -1057,7 +1057,7 @@ Figure&nbsp;4: How Quarto orchestrates rendering of documents.
 </section>
 <section id="standard-slide-with-r-code-output" class="slide level2 smaller output-location-slide"><h2>Standard slide with R code</h2><div class="cell output-location-slide">
 <div class="cell-output-display">
-<div id="fig-code-ex" class="quarto-figure quarto-figure-center quarto-float">
+<div id="fig-code-ex" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-fig">
 <div aria-describedby="fig-code-ex-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img data-src="index_files/figure-revealjs/fig-code-ex-1.png" width="960">
@@ -1106,7 +1106,7 @@ Content for `Tab B`
 <div id="tabset-1-2">
 <div class="cell">
 <div class="cell-output-display">
-<div id="fig-tabset" class="quarto-figure quarto-figure-center quarto-float">
+<div id="fig-tabset" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-fig">
 <div aria-describedby="fig-tabset-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img data-src="index_files/figure-revealjs/fig-tabset-1.png" width="960">
@@ -1141,7 +1141,7 @@ Figure&nbsp;6: Tabset plot
 <ul>
 <li>See <a href="#/clean-tables" class="quarto-xref">Table&nbsp;1</a>.</li>
 </ul>
-<div id="tbl-ex" class="quarto-float">
+<div id="tbl-ex" class="quarto-float quarto-figure quarto-figure-center" data-tbl-colwidths="[25,25,25]">
 <figure class="quarto-float quarto-float-tbl">
 <div aria-describedby="tbl-ex-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table style="width:75%;">
@@ -1197,7 +1197,7 @@ Table&nbsp;1: This is a table caption
 <h2>Social embeds: Twitter</h2>
 <p>Embed a tweet using:</p>
 <div class="sourceCode" id="cb20" data-shortcodes="false"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb20-1"><a href=""></a>{{&lt; tweet &lt;USERNAME&gt; &lt;ID&gt; &gt;}}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p></p><div id="tweet-66728"></div><script>tweet={"url":"https:\/\/twitter.com\/juliesquid\/status\/1557485909486059523","author_name":"Dr Julia Stewart Lowndes @juliesquid@fosstodon.org","author_url":"https:\/\/twitter.com\/juliesquid","html":"\u003Cblockquote class=\"twitter-tweet\" align=\"center\"\u003E\u003Cp lang=\"en\" dir=\"ltr\"\u003EA short blog about summarizing our \u003Ca href=\"https:\/\/twitter.com\/hashtag\/rstudioconf2022?src=hash&amp;ref_src=twsrc%5Etfw\"\u003E#rstudioconf2022\u003C\/a\u003E \u003Ca href=\"https:\/\/twitter.com\/hashtag\/rstudioconf?src=hash&amp;ref_src=twsrc%5Etfw\"\u003E#rstudioconf\u003C\/a\u003E \u003Ca href=\"https:\/\/twitter.com\/quarto_pub?ref_src=twsrc%5Etfw\"\u003E@quarto_pub\u003C\/a\u003E keynote - I am so grateful for the opportunity to learn &amp; build with so many people at this cool intersection of actionable \u003Ca href=\"https:\/\/twitter.com\/hashtag\/environmental?src=hash&amp;ref_src=twsrc%5Etfw\"\u003E#environmental\u003C\/a\u003E science, data science, &amp; open science \uD83D\uDCAB\u003Ca href=\"https:\/\/t.co\/JK67QHzbHc\"\u003Ehttps:\/\/t.co\/JK67QHzbHc\u003C\/a\u003E\u003C\/p\u003E&mdash; Dr Julia Stewart Lowndes @juliesquid@fosstodon.org (@juliesquid) \u003Ca href=\"https:\/\/twitter.com\/juliesquid\/status\/1557485909486059523?ref_src=twsrc%5Etfw\"\u003EAugust 10, 2022\u003C\/a\u003E\u003C\/blockquote\u003E\n\u003Cscript async src=\"https:\/\/platform.twitter.com\/widgets.js\" charset=\"utf-8\"\u003E\u003C\/script\u003E\n\n","width":550,"height":null,"type":"rich","cache_age":"3153600000","provider_name":"Twitter","provider_url":"https:\/\/twitter.com","version":"1.0"};document.getElementById("tweet-66728").innerHTML = tweet["html"];</script><p></p>
+<p></p><div id="tweet-34016"></div><script>tweet={"url":"https:\/\/twitter.com\/juliesquid\/status\/1557485909486059523","author_name":"Dr Julia Stewart Lowndes @juliesquid@fosstodon.org","author_url":"https:\/\/twitter.com\/juliesquid","html":"\u003Cblockquote class=\"twitter-tweet\" align=\"center\"\u003E\u003Cp lang=\"en\" dir=\"ltr\"\u003EA short blog about summarizing our \u003Ca href=\"https:\/\/twitter.com\/hashtag\/rstudioconf2022?src=hash&amp;ref_src=twsrc%5Etfw\"\u003E#rstudioconf2022\u003C\/a\u003E \u003Ca href=\"https:\/\/twitter.com\/hashtag\/rstudioconf?src=hash&amp;ref_src=twsrc%5Etfw\"\u003E#rstudioconf\u003C\/a\u003E \u003Ca href=\"https:\/\/twitter.com\/quarto_pub?ref_src=twsrc%5Etfw\"\u003E@quarto_pub\u003C\/a\u003E keynote - I am so grateful for the opportunity to learn &amp; build with so many people at this cool intersection of actionable \u003Ca href=\"https:\/\/twitter.com\/hashtag\/environmental?src=hash&amp;ref_src=twsrc%5Etfw\"\u003E#environmental\u003C\/a\u003E science, data science, &amp; open science \uD83D\uDCAB\u003Ca href=\"https:\/\/t.co\/JK67QHzbHc\"\u003Ehttps:\/\/t.co\/JK67QHzbHc\u003C\/a\u003E\u003C\/p\u003E&mdash; Dr Julia Stewart Lowndes @juliesquid@fosstodon.org (@juliesquid) \u003Ca href=\"https:\/\/twitter.com\/juliesquid\/status\/1557485909486059523?ref_src=twsrc%5Etfw\"\u003EAugust 10, 2022\u003C\/a\u003E\u003C\/blockquote\u003E\n\u003Cscript async src=\"https:\/\/platform.twitter.com\/widgets.js\" charset=\"utf-8\"\u003E\u003C\/script\u003E\n\n","width":550,"height":null,"type":"rich","cache_age":"3153600000","provider_name":"Twitter","provider_url":"https:\/\/twitter.com","version":"1.0"};document.getElementById("tweet-34016").innerHTML = tweet["html"];</script><p></p>
 </section>
 <section id="social-embeds-vimeo" class="slide level2">
 <h2>Social embeds: Vimeo</h2>
@@ -1214,7 +1214,7 @@ Table&nbsp;1: This is a table caption
 <div class="sourceCode" id="cb23" data-shortcodes="false"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb23-1"><a href=""></a>{{&lt; qrcode link id width=100 height=100 colorDark='#cc0033' &gt;}}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div id="homepage" class="qrcode"></div>
 <script type="text/javascript">
-var qrcode = new QRCode("homepage", {"colorLight":"#ffffff","text":"www.jvcasillas.com","colorDark":"#cc0033","width":"100","height":"100"});
+var qrcode = new QRCode("homepage", {"text":"www.jvcasillas.com","colorLight":"#ffffff","height":"100","colorDark":"#cc0033","width":"100"});
 </script>
     
 </section></section>
@@ -1542,18 +1542,7 @@ var qrcode = new QRCode("homepage", {"colorLight":"#ffffff","text":"www.jvcasill
         }
         return false;
       }
-      const clipboard = new window.ClipboardJS('.code-copy-button', {
-        text: function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
-            }
-          }
-          return codeEl.innerText;
-        }
-      });
-      clipboard.on('success', function(e) {
+      const onCopySuccess = function(e) {
         // button target
         const button = e.trigger;
         // don't keep focus
@@ -1585,7 +1574,47 @@ var qrcode = new QRCode("homepage", {"colorLight":"#ffffff","text":"www.jvcasill
         }, 1000);
         // clear code selection
         e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
       });
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        // For code content inside modals, clipBoardJS needs to be initialized with a container option
+        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp('/' + window.location.host + '/');
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+            // undo the damage that might have been done by quarto-nav.js in the case of
+            // links that we want to consider external
+            if (link.dataset.originalHref !== undefined) {
+              link.href = link.dataset.originalHref;
+            }
+          }
+        }
       function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
         const config = {
           allowHTML: true,
@@ -1622,7 +1651,11 @@ var qrcode = new QRCode("homepage", {"colorLight":"#ffffff","text":"www.jvcasill
           try { href = new URL(href).hash; } catch {}
           const id = href.replace(/^#\/?/, "");
           const note = window.document.getElementById(id);
-          return note.innerHTML;
+          if (note) {
+            return note.innerHTML;
+          } else {
+            return "";
+          }
         });
       }
       const findCites = (el) => {
