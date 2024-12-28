@@ -4,6 +4,9 @@ version: 0.0.1
 contributes:
   formats: 
     revealjs:
+      menu:
+        useTextContentForMissingTitles: false 
+        hideMissingTitles: true
       #logo: logo.png
       theme: [default, rutgers.scss]
       template-partials:

@@ -142,3 +142,15 @@ caption {
   //font-family: "Charis Serif" !important;
   font-family: "Gentium Plus" !important;
 }
+
+/* Make any text fancy */
+.p-font {
+  font-family: "Yanone Kaffeesatz" !important;
+}
+
+/* Custom breaks */
+.reveal mybr {
+  display: block !important; 
+  content: "" !important; 
+  line-height: 40px !important;
+}
