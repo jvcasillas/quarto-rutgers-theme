@@ -154,3 +154,8 @@ caption {
   content: "" !important; 
   line-height: 40px !important;
 }
+
+/* smaller code */
+.small-code code {
+  font-size: 0.8em !important;  
+}
