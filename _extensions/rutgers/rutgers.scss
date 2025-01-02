@@ -174,3 +174,15 @@ ru-blockquote {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
 }
+
+/* Less space between list items */
+.closelist li {
+  margin-bottom: -5px !important;
+  line-height: 0.97em !important;
+}
+
+/* Less space between normal text */
+.closep p {
+  margin-bottom: -10px !important;
+  line-height: 0.85em !important;
+}
